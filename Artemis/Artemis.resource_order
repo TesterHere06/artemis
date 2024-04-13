@@ -80,6 +80,7 @@
     {"name":"obj_enemyParent","order":2,"path":"objects/obj_enemyParent/obj_enemyParent.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_stamina","order":2,"path":"objects/obj_stamina/obj_stamina.yy",},
+    {"name":"obj_book","order":10,"path":"objects/obj_book/obj_book.yy",},
     {"name":"__input_axis_is_directional","order":9,"path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},
     {"name":"__input_binding_get_label","order":10,"path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},
     {"name":"__input_class_chord_definition","order":1,"path":"scripts/__input_class_chord_definition/__input_class_chord_definition.yy",},
@@ -476,5 +477,6 @@
     {"name":"spr_collision","order":3,"path":"sprites/spr_collision/spr_collision.yy",},
     {"name":"spr_cursor","order":1,"path":"sprites/spr_cursor/spr_cursor.yy",},
     {"name":"spr_enemy1","order":4,"path":"sprites/spr_enemy1/spr_enemy1.yy",},
+    {"name":"spr_Book","order":5,"path":"sprites/spr_Book/spr_Book.yy",},
   ],
 }
