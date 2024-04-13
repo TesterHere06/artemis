@@ -2,6 +2,7 @@ xEnd = 0;     // breakpoints
 yEnd = 0;
 length_laser = 0; // total length used to determine and draw laser
 timer = 6;
+dmg = 3;
 
 
 

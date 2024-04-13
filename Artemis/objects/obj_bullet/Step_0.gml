@@ -17,13 +17,6 @@ for (i = 0; i < max_length; i++ ) {
   
    // breaking point change here object to break to or add multiple breaking points
     if (collision_point(xEnd, yEnd, obj_collision,0,0 ) ) {
-      
-        part_particles_create(o_Particle_Setup.particleSystem, xEnd, yEnd, o_Particle_Setup.particleType_Hit_Blue, 1  );
-        part_particles_create(o_Particle_Setup.particleSystem, xEnd, yEnd, o_Particle_Setup.particleType_Spark_Blue, 10  );
-  
-  
-  
-  
     break; // stops loop and sets new xEnd and yEnd values
     }
   
@@ -33,26 +26,29 @@ for (i = 0; i < max_length; i++ ) {
 
 #region    collision  -> with global enemy to change its values (hp or something)
 
- if (instance_exists(obj_enemy1)) {
+if (instance_exists(obj_enemy1)) {
+    if (refresh_hit == true) {
+        refresh_hit = false;
 
-      // add
-      if (refresh_hit == true) { refresh_hit = false;
-    
-      var _list = ds_list_create();
-      var hits = collision_line_list(x,y, xEnd, yEnd, obj_enemy1, 0,0, _list,0 );
-    
-         if (hits > 0 ) {
-        
-               for (var k = 0; k < hits; ++k;) {
-                  
-                   _list[| k].hp = _list[| k].hp -1;
-              
-               }
+        var _list = ds_list_create();
+        var hits = collision_line_list(x, y, xEnd, yEnd, obj_enemy1, 0, 0, _list, 0);
+
+        if (hits > 0) {
+            show_debug_message("Laser collided with enemy!");
+            for (var k = 0; k < hits; ++k) {
+                var enemy_inst = _list[| k];
+                enemy_inst.hp -= dmg; // Deal damage equal to 'dmg' variable
+
+                if (enemy_inst.hp <= 0) {
+                    instance_destroy(enemy_inst); // Destroy enemy instance if HP is zero or below
+                }
+            }
         }
-     ds_list_destroy(_list);
+        ds_list_destroy(_list);
+    }
+}
 
-     } // end of refresh check
- }  // end of enemy exist check
+
 
 
 

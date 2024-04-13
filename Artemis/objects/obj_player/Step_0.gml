@@ -35,13 +35,36 @@ if input_check("special") and global.Stamina > 0 and (input_check("left") or inp
 	}
 }
 
+aimDir = point_direction(x, y, mouse_x, mouse_y);
 // laser beam create
 if input_check_pressed("shoot") {    
-    if !(instance_exists(obj_bullet)) {
-    instance_create_depth(mouse_x , mouse_y, 0, obj_bullet );
+//    if !(instance_exists(obj_bullet)) {
+//    instance_create_depth(mouse_x , mouse_y, 0, obj_bullet );
+//	}
+	
+	// Create the bullet direction
+	var _bulletInst = instance_create_depth(x, y, depth-100, obj_testBullet)
+	
+	//change bullet direction
+	with(_bulletInst){
+		dir = other.aimDir;
 	}
 }
 
-if place_meeting(x, y, obj_collision){
- 
+// Check for collision before updating the player's position
+if !place_meeting(x + hspeed, y, obj_collision) {
+    x += hspeed;
+}
+if !place_meeting(x, y + vspeed, obj_collision) {
+    y += vspeed;
+}
+
+// Adjust the player's horizontal and vertical speed based on collision
+if place_meeting(x + hspeed, y, obj_collision) {
+    // If there's a collision in the horizontal direction, set hspeed to 0
+    hspeed = 0;
+}
+if place_meeting(x, y + vspeed, obj_collision) {
+    // If there's a collision in the vertical direction, set vspeed to 0
+    vspeed = 0;
 }

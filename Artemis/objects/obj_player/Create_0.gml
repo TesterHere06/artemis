@@ -5,5 +5,7 @@ global.MaxStamina = 100;
 global.Stamina = global.MaxStamina;
 global.IsGamepad = false
 
+aimDir = 0;
+
 x = 200
 y = 100
