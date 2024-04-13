@@ -1,10 +1,20 @@
-var hor = (input_check("right") - input_check("left"));
-var ver = (input_check("down") - input_check("up"));
-if (hor != 0 and ver !=0) {
-global.DiagonalSpeed = 0.707;
-} else {
-global.DiagonalSpeed = 1;
+check_for_gamepad()
+
+if !global.IsGamepad {
+	var hor = (input_check("right") - input_check("left"));
+	var ver = (input_check("down") - input_check("up"));
+	if (hor != 0 and ver !=0) {
+		global.DiagonalSpeed = 0.707;
+	} else {
+		global.DiagonalSpeed = 1;
+	}
 }
+if global.IsGamepad {
+	var hor = gamepad_axis_value(0, gp_axislh);
+	var ver = gamepad_axis_value(0, gp_axislv);
+	global.DiagonalSpeed = min( 1, sqrt( hor*hor + ver*ver ) ) / sqrt( hor*hor + ver*ver );
+}
+show_debug_message(string(global.IsGamepad) + " " + string(sqrt( hor*hor + ver*ver )))
 
 hspeed = hor * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;
 vspeed = ver * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;
