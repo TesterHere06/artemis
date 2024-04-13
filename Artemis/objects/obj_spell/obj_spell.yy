@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_book",
+  "%Name":"obj_spell",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_book",
+  "name":"obj_spell",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_book",
-    "path":"sprites/spr_book/spr_book.yy",
+    "name":"spr_spell",
+    "path":"sprites/spr_spell/spr_spell.yy",
   },
   "spriteMaskId":null,
   "visible":true,
