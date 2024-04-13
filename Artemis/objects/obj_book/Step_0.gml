@@ -11,4 +11,4 @@ if BookWantsOpen and global.BookOpen < 1 {
 }
 CameraPositon()
 x += 1600;
-y += 1248 - global.BookOpen * 160;
+y += 1248 - global.BookOpen * 120;
