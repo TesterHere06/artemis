@@ -9,5 +9,6 @@ if BookWantsOpen and global.BookOpen < 1 {
 		global.BookOpen -= 0.1
 	}
 }
-x = 1216;
-y = 928 - global.BookOpen * 160;
+CameraPositon()
+x += 1600;
+y += 1248 - global.BookOpen * 160;

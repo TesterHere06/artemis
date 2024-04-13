@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CameraPositon",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CameraPositon",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

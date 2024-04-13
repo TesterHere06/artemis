@@ -43,15 +43,15 @@ function __input_config_verbs()
             accept:  input_binding_gamepad_button(gp_face1),
             cancel:  input_binding_gamepad_button(gp_face2),
             action:  input_binding_gamepad_button(gp_face3),
-            special: input_binding_gamepad_button(gp_face4),
+            special: input_binding_gamepad_button(gp_shoulderlb),
             
             aim_up:    input_binding_gamepad_axis(gp_axisrv, true),
             aim_down:  input_binding_gamepad_axis(gp_axisrv, false),
             aim_left:  input_binding_gamepad_axis(gp_axisrh, true),
             aim_right: input_binding_gamepad_axis(gp_axisrh, false),
-            shoot:     [input_binding_gamepad_button(gp_shoulderlb), input_binding_gamepad_button(gp_shoulderrb)],
+            shoot:     [input_binding_gamepad_button(gp_shoulderrb)],
 			
-			book: input_binding_gamepad_button(gp_shoulderlb),
+			book: input_binding_gamepad_button(gp_shoulderl),
             
             pause: input_binding_gamepad_button(gp_start),
         },
