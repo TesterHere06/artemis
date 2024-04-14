@@ -44,7 +44,7 @@ if input_check_pressed("shoot") && shootTimer <= 0 {
 	var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
 	
 	var _spread = weapon.spread;
-	var _spreadDiv = _spread / weapon.bulletNum;
+	var _spreadDiv = _spread / max(weapon.bulletNum-1, 1);
 	
 	// Create the correct number of bullets
 	for (var i = 0; i < weapon.bulletNum; i++){
