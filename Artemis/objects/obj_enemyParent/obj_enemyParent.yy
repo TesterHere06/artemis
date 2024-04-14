@@ -14,7 +14,10 @@
     "name":"Meta",
     "path":"folders/Objects/Meta.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_damagePlayer",
+    "path":"objects/obj_damagePlayer/obj_damagePlayer.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

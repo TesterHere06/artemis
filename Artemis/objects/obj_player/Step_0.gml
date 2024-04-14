@@ -9,6 +9,10 @@ if !global.IsGamepad {
 		global.DiagonalSpeed = 1;
 	}
 }
+
+//get damaged
+get_damaged(obj_damagePlayer, true);
+
 if global.IsGamepad {
 	var hor = gamepad_axis_value(0, gp_axislh);
 	var ver = gamepad_axis_value(0, gp_axislv);

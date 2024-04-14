@@ -12,7 +12,7 @@ image_xscale = 2
 image_yscale = 2
 
 //damage setup
-get_damaged_create(global.PlayerHP);
+get_damaged_create(global.PlayerHP, true);
 
 weaponOffsetDist = 4;
 aimDir = 0;
