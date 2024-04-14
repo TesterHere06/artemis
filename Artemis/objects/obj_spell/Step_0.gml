@@ -46,20 +46,19 @@ if mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, id
 	
 	CastSpell()
 	
-	Cooldown = 100 + random(400);
+	Cooldown = global.Cooldown[SpellID];
 	Animation[1] = 30;
 	Animation[3] = Animation[0];
 	
 	var pickedspellid = false
+	PrevSpellID = SpellID
 	do {
 		SpellID = irandom_range(1,global.SpellListLength);
 		pickedspellid = true;
 		for (var i = 0; i < 4; i++) {
 			if SpellNumber!= i and SpellID == global.Spell[i].SpellID {
 				pickedspellid = false;
-			}
+			} else if PrevSpellID == SpellID pickedspellid = false;
 		}
 	} until pickedspellid;
 }
-
-show_debug_message(string(SpellID))
