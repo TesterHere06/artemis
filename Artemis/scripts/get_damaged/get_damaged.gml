@@ -61,6 +61,12 @@ function get_damaged(_damageObject, _iframes = false)
 				_hitConfirm = true;
 				//tell the damage it has impacted
 				_inst.hitConfirm = true;
+				
+				//Create impact visual
+				if _inst.hitVFX == true
+				{
+				create_animated_vfx(spr_poof, _inst.x, _inst.y, _inst.depth-50)
+				}
 			}
 		}
 	

@@ -23,5 +23,6 @@ if point_distance(xstart, ystart, x, y) > maxDist{
 
 //Destroy
 if destroy == true{
+	create_animated_vfx(spr_poof, x, y, depth)
 	instance_destroy();
 }

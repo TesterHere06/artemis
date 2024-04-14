@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"create_animated_vfx",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_animated_vfx",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -44,7 +44,7 @@ if input_check("special") and global.Stamina > 0 and (input_check("left") or inp
 centerY = y + centerYoffset;
 aimDir = point_direction(x, centerY, global.cursor_x, global.cursor_y);
 if shootTimer > 0 {shootTimer-- };
-if input_check_pressed("shoot") && shootTimer <= 0 {
+if input_check("shoot") && shootTimer <= 0 {
 	
 	//Reset the time
 	shootTimer = weapon.cooldown;
@@ -55,6 +55,13 @@ if input_check_pressed("shoot") && shootTimer <= 0 {
 	
 	var _spread = weapon.spread;
 	var _spreadDiv = _spread / max(weapon.bulletNum-1, 1);
+	
+	var _weaponTipX = x + _xOffset;
+	var _weaponTipY = y + _yOffset;
+	
+	//Create weapon flash
+	create_animated_vfx(spr_flashWeapon, _weaponTipX, _weaponTipY, depth-10, aimDir);
+	
 	
 	// Create the correct number of bullets
 	for (var i = 0; i < weapon.bulletNum; i++){
@@ -105,4 +112,4 @@ if place_meeting(x, y + vspeed, obj_collision) {
 
 if global.WeaponChanged > 0 {
 	global.WeaponChanged --
-} else weapon = global.WeaponList.revolver;
+} else weapon = global.WeaponList.revovler;

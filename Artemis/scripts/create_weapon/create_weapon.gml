@@ -11,7 +11,8 @@ function create_weapon(_sprite = spr_gun, _weaponLength = 0, _bulletObj = obj_te
 //the weapons
 global.WeaponList = {
 	
-	revolver : new create_weapon(spr_gun,sprite_get_bbox_right(spr_gun), obj_testBullet, 9, 1, 0),
-	shotgun : new create_weapon(spr_shotgun, sprite_get_bbox_right(spr_shotgun), obj_shellBullet, 19, 5, 50)
+	revolver : new create_weapon(spr_gun,sprite_get_bbox_right(spr_gun), obj_testBullet, 15, 1, 0),
+	shotgun : new create_weapon(spr_shotgun, sprite_get_bbox_right(spr_shotgun), obj_shellBullet, 25, 5, 50),
+	assaultrifle : new create_weapon(spr_assaultRifle, sprite_get_bbox_right(spr_assaultRifle), obj_testBullet, 5, 1, 0)
 	
 }
