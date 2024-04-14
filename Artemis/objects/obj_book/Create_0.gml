@@ -1,6 +1,5 @@
 global.BookOpen = 0;
 global.BookWantsOpen = false;
-global.ComboLength = 0;
 
 window_set_fullscreen(true);
 

@@ -1,5 +1,4 @@
 if global.BookOpen < 0.6 {
-	global.ComboLength = 0;
 	global.CurrentCombo = "";
 if !global.IsGamepad {
 	var hor = (input_check("right") - input_check("left"));
@@ -84,19 +83,15 @@ if place_meeting(x, y + vspeed, obj_collision) {
 	vspeed = 0;
 	if input_check_pressed("right") {
 		global.CurrentCombo += "D";
-		global.ComboLength ++
 	}
 	if input_check_pressed("left") {
 		global.CurrentCombo += "A";
-		global.ComboLength ++
 	}
 	if input_check_pressed("down") {
 		global.CurrentCombo += "S"
-		global.ComboLength ++
 	}
 	if input_check_pressed("up") {
 		global.CurrentCombo += "W";
-		global.ComboLength ++
 	}
 	show_debug_message(global.CurrentCombo)
 }

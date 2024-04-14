@@ -21,7 +21,6 @@ if string_length(global.CurrentCombo) > 0 {
 		}
 	}
 	if isspell == false {
-		global.ComboLength = 0;
 		global.CurrentCombo = "";
 	}
 }

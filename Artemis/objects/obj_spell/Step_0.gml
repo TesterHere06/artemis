@@ -44,7 +44,6 @@ Animation[0] = clamp(Animation[0], 0, 1)
 if input_check_pressed("shoot") and global.Combo[SpellID] == global.CurrentCombo and Cooldown < 1 {
 	image_blend = c_gray;
 	
-	global.ComboLength = 0;
 	global.CurrentCombo = "";
 	
 	CastSpell()
