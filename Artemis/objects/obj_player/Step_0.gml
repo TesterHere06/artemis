@@ -75,3 +75,7 @@ if place_meeting(x, y + vspeed, obj_collision) {
     // If there's a collision in the vertical direction, set vspeed to 0
     vspeed = 0;
 }
+
+if global.WeaponChanged > 0 {
+	global.WeaponChanged --
+} else weapon = global.WeaponList.revolver;

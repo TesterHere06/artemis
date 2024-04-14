@@ -4,6 +4,7 @@ global.BonusSpeed = 0;
 global.MaxStamina = 100;
 global.Stamina = global.MaxStamina;
 global.IsGamepad = false
+global.WeaponChanged = 0;
 image_xscale = 2
 image_yscale = 2
 
@@ -15,7 +16,7 @@ centerY = y + centerYoffset;
 shootTimer = 0;
 
 //Weapon choice
-weapon = global.WeaponList.shotgun;
+weapon = global.WeaponList.revolver;
 
 x = 200
 y = 100
