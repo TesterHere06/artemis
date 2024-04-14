@@ -10,3 +10,4 @@ dirFix = false;
 // Clean Up
 maxDist = 1000;
 destroy = false;
+enemyDestroy = false;

@@ -8,6 +8,9 @@ y += yspd;
 //Cleanup
 
 
+//hit confirm destroy
+if hitConfirm == true && enemyDestroy == true {destroy = true;}
+
 //Collision
 if place_meeting(x, y, obj_collision){
 	destroy = true;
