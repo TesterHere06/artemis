@@ -1,3 +1,6 @@
+if global.BookOpen < 0.6 {
+	global.ComboLength = 0;
+	global.CurrentCombo = "";
 if !global.IsGamepad {
 	var hor = (input_check("right") - input_check("left"));
 	var ver = (input_check("down") - input_check("up"));
@@ -74,6 +77,28 @@ if place_meeting(x + hspeed, y, obj_collision) {
 if place_meeting(x, y + vspeed, obj_collision) {
     // If there's a collision in the vertical direction, set vspeed to 0
     vspeed = 0;
+}
+
+} else {
+	hspeed = 0;
+	vspeed = 0;
+	if input_check_pressed("right") {
+		global.CurrentCombo += "D";
+		global.ComboLength ++
+	}
+	if input_check_pressed("left") {
+		global.CurrentCombo += "A";
+		global.ComboLength ++
+	}
+	if input_check_pressed("down") {
+		global.CurrentCombo += "S"
+		global.ComboLength ++
+	}
+	if input_check_pressed("up") {
+		global.CurrentCombo += "W";
+		global.ComboLength ++
+	}
+	show_debug_message(global.CurrentCombo)
 }
 
 if global.WeaponChanged > 0 {

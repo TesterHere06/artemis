@@ -5,6 +5,7 @@ global.MaxStamina = 100;
 global.Stamina = global.MaxStamina;
 global.IsGamepad = false
 global.WeaponChanged = 0;
+global.CurrentCombo = "";
 image_xscale = 2
 image_yscale = 2
 

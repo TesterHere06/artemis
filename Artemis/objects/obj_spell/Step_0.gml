@@ -41,8 +41,11 @@ if position_meeting(mouse_x, mouse_y, id) and Cooldown < 1 {
 } else Animation[0] -= 0.1
 Animation[0] = clamp(Animation[0], 0, 1)
 
-if mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, id) and Cooldown < 1 {
+if input_check_pressed("shoot") and global.Combo[SpellID] == global.CurrentCombo and Cooldown < 1 {
 	image_blend = c_gray;
+	
+	global.ComboLength = 0;
+	global.CurrentCombo = "";
 	
 	CastSpell()
 	
