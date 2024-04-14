@@ -1,6 +1,8 @@
 playing = 0;
 paused = 1;
 
+prevcontrollerinput = 0
+
 around = 0;
 manual = 1;
 

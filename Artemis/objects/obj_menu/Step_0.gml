@@ -6,13 +6,16 @@ if state = playing {
 
 if input_check_pressed("pause") {
 	if state == playing {
-		instance_deactivate_all(true)
-		surface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface))
-		surface_copy(surface, 0, 0, application_surface)
-		instance_deactivate_all(true)
-		instance_activate_object(input_controller_object)
+		instance_deactivate_all(true);
+		surface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
+		surface_copy(surface, 0, 0, application_surface);
+		instance_deactivate_all(true);
+		instance_activate_object(input_controller_object);
+		prevcontrollerinput = global.GamepadCursorMode;
+		global.GamepadCursorMode = manual;
 		state = paused;
 	} else if (state == paused) {
+		global.GamepadCursorMode = prevcontrollerinput;
 		state = playing;
 		instance_activate_all();
 	}
