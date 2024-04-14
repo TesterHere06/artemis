@@ -42,11 +42,19 @@ if input_check_pressed("shoot") && shootTimer <= 0 {
 	// Create the bullet direction
 	var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
 	var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
-	var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, weapon.bulletObj)
 	
-	//change bullet direction
-	with(_bulletInst){
-		dir = other.aimDir;
+	var _spread = weapon.spread;
+	var _spreadDiv = _spread / weapon.bulletNum;
+	
+	// Create the correct number of bullets
+	for (var i = 0; i < weapon.bulletNum; i++){
+		
+		var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, weapon.bulletObj)
+	
+		//change bullet direction
+		with(_bulletInst){
+			dir = other.aimDir - _spread/2 + _spreadDiv*i;
+		}
 	}
 }
 

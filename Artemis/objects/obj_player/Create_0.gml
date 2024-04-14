@@ -14,6 +14,7 @@ centerY = y + centerYoffset;
 
 shootTimer = 0;
 
+//Weapon choice
 weapon = global.WeaponList.shotgun;
 
 x = 200
