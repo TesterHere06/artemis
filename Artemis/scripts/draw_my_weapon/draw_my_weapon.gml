@@ -15,5 +15,10 @@ function draw_my_weapon(){
 }
 
 //the weapons
-revolver = new create_weapon(spr_gun,sprite_get_bbox_right(spr_gun), obj_testBullet, 9)
-shotgun = new create_weapon(spr_shotgun, sprite_get_bbox_right(spr_shotgun), obj_shellBullet, 19)
+global.WeaponList = {
+	
+	revolver : new create_weapon(spr_gun,sprite_get_bbox_right(spr_gun), obj_testBullet, 9),
+	shotgun : new create_weapon(spr_shotgun, sprite_get_bbox_right(spr_shotgun), obj_shellBullet, 19)
+	
+}
+

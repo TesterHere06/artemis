@@ -14,7 +14,7 @@ centerY = y + centerYoffset;
 
 shootTimer = 0;
 
-weapon = shotgun;
+weapon = global.WeaponList.shotgun;
 
 x = 200
 y = 100
