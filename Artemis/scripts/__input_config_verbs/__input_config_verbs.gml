@@ -20,6 +20,11 @@ function __input_config_verbs()
             left:  [input_binding_key(vk_left),  input_binding_key("A")],
             right: [input_binding_key(vk_right), input_binding_key("D")],
             
+			spell_up:    [input_binding_key(vk_up),    input_binding_key("W")],
+            spell_down:  [input_binding_key(vk_down),  input_binding_key("S")],
+            spell_left:  [input_binding_key(vk_left),  input_binding_key("A")],
+            spell_right: [input_binding_key(vk_right), input_binding_key("D")],
+			
             accept:  input_binding_key(vk_space),
             cancel:  input_binding_key(vk_backspace),
             action:  input_binding_key(vk_enter),
@@ -45,6 +50,11 @@ function __input_config_verbs()
             action:  input_binding_gamepad_button(gp_face3),
             special: input_binding_gamepad_button(gp_shoulderlb),
             
+			spell_up:  input_binding_gamepad_button(gp_face4),
+            spell_right:  input_binding_gamepad_button(gp_face2),
+            spell_left:  input_binding_gamepad_button(gp_face3),
+            spell_down: input_binding_gamepad_button(gp_face1),
+			
             aim_up:    input_binding_gamepad_axis(gp_axisrv, true),
             aim_down:  input_binding_gamepad_axis(gp_axisrv, false),
             aim_left:  input_binding_gamepad_axis(gp_axisrh, true),

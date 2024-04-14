@@ -81,16 +81,16 @@ if place_meeting(x, y + vspeed, obj_collision) {
 } else {
 	hspeed = 0;
 	vspeed = 0;
-	if input_check_pressed("right") {
+	if input_check_pressed("spell_right") {
 		global.CurrentCombo += "D";
 	}
-	if input_check_pressed("left") {
+	if input_check_pressed("spell_left") {
 		global.CurrentCombo += "A";
 	}
-	if input_check_pressed("down") {
+	if input_check_pressed("spell_down") {
 		global.CurrentCombo += "S"
 	}
-	if input_check_pressed("up") {
+	if input_check_pressed("spell_up") {
 		global.CurrentCombo += "W";
 	}
 }
