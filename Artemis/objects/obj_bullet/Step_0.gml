@@ -3,7 +3,7 @@ if timer = 6 {
 	x = obj_player.x;
 	y = obj_player.y;
 
-	direction = point_direction(obj_player.x, obj_player.y, obj_cursor.x, obj_cursor.y );
+	direction = point_direction(obj_player.x, obj_player.y, global.cursor_x, global.cursor_y );
 }
 
  #region // define how long the laser can get max plus when hitting something

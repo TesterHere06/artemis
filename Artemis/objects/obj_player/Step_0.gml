@@ -15,7 +15,7 @@ if global.IsGamepad {
 
 hspeed = hor * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;
 vspeed = ver * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;
-if x < obj_cursor.x {image_xscale = 2}
+if x < global.cursor_x {image_xscale = 2}
 else {image_xscale = -2};
 
 if input_check("special") and global.Stamina > 0 and (input_check("left") or input_check("up") or input_check("down") or input_check("right")) > 0 {
@@ -32,7 +32,7 @@ if input_check("special") and global.Stamina > 0 and (input_check("left") or inp
 	}
 }
 centerY = y + centerYoffset;
-aimDir = point_direction(x, centerY, obj_cursor.x, obj_cursor.y);
+aimDir = point_direction(x, centerY, global.cursor_x, global.cursor_y);
 if shootTimer > 0 {shootTimer-- };
 if input_check_pressed("shoot") && shootTimer <= 0 {
 	

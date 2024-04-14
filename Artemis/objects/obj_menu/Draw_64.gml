@@ -17,19 +17,21 @@ if (state == paused) {
 
 
 if !global.IsGamepad {
-	cursor_x = mouse_x-x;
-	cursor_y = mouse_y-y;
+	global.cursor_x = mouse_x;
+	global.cursor_y = mouse_y;
 } else {
 	if global.GamepadCursorMode == around {
 		var hor = gamepad_axis_value(0, gp_axisrh)
 		var ver = gamepad_axis_value(0, gp_axisrv)
 		var bindings = min( 1, sqrt( hor*hor + ver*ver ) ) / sqrt( hor*hor + ver*ver )
-		cursor_x = obj_player.x-x + hor * bindings * 160;
-		cursor_y = obj_player.y-y + ver * bindings * 160;
+		global.cursor_x = obj_player.x + hor * bindings * 160;
+		global.cursor_y = obj_player.y + ver * bindings * 160;
 	} else {
-		cursor_x += gamepad_axis_value(0, gp_axisrh) * 20
-		cursor_y += gamepad_axis_value(0, gp_axisrv) * 20
+		global.cursor_x += gamepad_axis_value(0, gp_axisrh) * 20
+		global.cursor_y += gamepad_axis_value(0, gp_axisrv) * 20
 	}
 }
+global.cursor_x = clamp(global.cursor_x, x, x + surface_get_width(application_surface));
+global.cursor_y = clamp(global.cursor_y, y, y + surface_get_height(application_surface));
 draw_set_alpha(1)
-draw_sprite(spr_cursor, 0, cursor_x, cursor_y)
+draw_sprite(spr_cursor, 0, global.cursor_x-x, global.cursor_y-y)

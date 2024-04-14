@@ -1,10 +1,15 @@
 gamepad_set_axis_deadzone(0, 0.3);
+global.cursor_x = 0;
+global.cursor_y = 0;
+window_set_cursor(cr_none);
 
 playing = 0;
 paused = 1;
 
 around = 0;
 manual = 1;
+
+global.GamepadCursorMode = around;
 
 cursor_x = 0
 cursor_y = 0
