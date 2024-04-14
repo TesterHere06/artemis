@@ -1,6 +1,4 @@
 global.PlayerSpeed = 3;
-global.PlayerHP = 7;
-global.PlayerMaxHP = 7;
 global.DiagonalSpeed = 1;
 global.BonusSpeed = 0;
 global.MaxStamina = 100;
@@ -11,8 +9,10 @@ global.CurrentCombo = "";
 image_xscale = 2
 image_yscale = 2
 
+maxhp = 7
+
 //damage setup
-get_damaged_create(global.PlayerHP, true);
+get_damaged_create(maxhp, true);
 
 weaponOffsetDist = 4;
 aimDir = 0;

@@ -10,7 +10,3 @@ draw_self();
 if aimDir >= 0 ^^ aimDir < 180{
 	draw_my_weapon();
 }
-
-
-//Draw hp as a number
-draw_text(x, y, string(hp));
