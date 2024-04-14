@@ -14,6 +14,10 @@ global.GamepadCursorMode = around;
 cursor_x = 0
 cursor_y = 0
 
+hor = 0
+ver = 0
+bindings = 0
+
 state = playing;
 
 surface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface))

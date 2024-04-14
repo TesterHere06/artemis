@@ -25,14 +25,18 @@ if !global.IsGamepad {
 	global.cursor_y = mouse_y;
 } else {
 	if global.GamepadCursorMode == around {
-		var hor = gamepad_axis_value(0, gp_axisrh)
-		var ver = gamepad_axis_value(0, gp_axisrv)
-		var bindings = min( 1, sqrt( hor*hor + ver*ver ) ) / sqrt( hor*hor + ver*ver )
-		global.cursor_x = obj_player.x + hor * bindings * 160;
-		global.cursor_y = obj_player.y + ver * bindings * 160;
+		if abs(gamepad_axis_value(0, gp_axisrh)) + abs(gamepad_axis_value(0, gp_axisrv)) >= 0.2 {
+			hor = gamepad_axis_value(0, gp_axisrh)
+			ver = gamepad_axis_value(0, gp_axisrv)
+			bindings = max(1, min(1, sqrt( hor*hor + ver*ver ) ) ) / sqrt( hor*hor + ver*ver )
+		}
+		global.cursor_x = obj_player.x + hor * bindings * 230;
+		global.cursor_y = obj_player.y + ver * bindings * 230;
 	} else {
-		global.cursor_x += gamepad_axis_value(0, gp_axisrh) * 20
-		global.cursor_y += gamepad_axis_value(0, gp_axisrv) * 20
+		if abs(gamepad_axis_value(0, gp_axisrh)) + abs(gamepad_axis_value(0, gp_axisrv)) >= 0.2 {
+			global.cursor_x += gamepad_axis_value(0, gp_axisrh) * 20
+			global.cursor_y += gamepad_axis_value(0, gp_axisrv) * 20
+		}
 	}
 }
 global.cursor_x = clamp(global.cursor_x, x, x + surface_get_width(application_surface));
