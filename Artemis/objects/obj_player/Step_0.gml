@@ -14,7 +14,6 @@ if global.IsGamepad {
 	var ver = gamepad_axis_value(0, gp_axislv);
 	global.DiagonalSpeed = min( 1, sqrt( hor*hor + ver*ver ) ) / sqrt( hor*hor + ver*ver );
 }
-show_debug_message(string(global.IsGamepad) + " " + string(sqrt( hor*hor + ver*ver )))
 
 hspeed = hor * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;
 vspeed = ver * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;

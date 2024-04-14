@@ -84,6 +84,7 @@
     {"name":"obj_stamina","order":2,"path":"objects/obj_stamina/obj_stamina.yy",},
     {"name":"obj_testBullet","order":12,"path":"objects/obj_testBullet/obj_testBullet.yy",},
     {"name":"obj_weaponParent","order":3,"path":"objects/obj_weaponParent/obj_weaponParent.yy",},
+    {"name":"obj_pausemenu","order":4,"path":"objects/obj_pausemenu/obj_pausemenu.yy",},
     {"name":"__input_axis_is_directional","order":9,"path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},
     {"name":"__input_binding_get_label","order":10,"path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},
     {"name":"__input_class_chord_definition","order":1,"path":"scripts/__input_class_chord_definition/__input_class_chord_definition.yy",},
@@ -476,7 +477,6 @@
     {"name":"__shd_scribble_bake_outline_8dir_2px","order":3,"path":"shaders/__shd_scribble_bake_outline_8dir_2px/__shd_scribble_bake_outline_8dir_2px.yy",},
     {"name":"__shd_scribble_bake_outline_8dir","order":2,"path":"shaders/__shd_scribble_bake_outline_8dir/__shd_scribble_bake_outline_8dir.yy",},
     {"name":"__shd_scribble_bake_shadow","order":4,"path":"shaders/__shd_scribble_bake_shadow/__shd_scribble_bake_shadow.yy",},
-    {"name":"spr_tiles","order":8,"path":"sprites/spr_tiles/spr_tiles.yy",},
     {"name":"scribble_fallback_bulletpoint","order":11,"path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},
     {"name":"spr_book","order":5,"path":"sprites/spr_book/spr_book.yy",},
     {"name":"spr_bullet","order":2,"path":"sprites/spr_bullet/spr_bullet.yy",},
@@ -485,5 +485,6 @@
     {"name":"spr_enemy1","order":4,"path":"sprites/spr_enemy1/spr_enemy1.yy",},
     {"name":"spr_spell","order":6,"path":"sprites/spr_spell/spr_spell.yy",},
     {"name":"spr_testBullet","order":7,"path":"sprites/spr_testBullet/spr_testBullet.yy",},
+    {"name":"spr_tiles","order":8,"path":"sprites/spr_tiles/spr_tiles.yy",},
   ],
 }
