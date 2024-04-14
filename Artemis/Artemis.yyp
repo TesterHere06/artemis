@@ -110,10 +110,6 @@
     {"id":{"name":"obj_stamina","path":"objects/obj_stamina/obj_stamina.yy",},},
     {"id":{"name":"obj_testBullet","path":"objects/obj_testBullet/obj_testBullet.yy",},},
     {"id":{"name":"obj_weaponParent","path":"objects/obj_weaponParent/obj_weaponParent.yy",},},
-<<<<<<< Updated upstream
-=======
-    {"id":{"name":"obj_revolver","path":"objects/obj_revolver/obj_revolver.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"__input_axis_is_directional","path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},},
     {"id":{"name":"__input_binding_get_label","path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},},
@@ -255,7 +251,6 @@
     {"id":{"name":"__scribble_tick","path":"scripts/__scribble_tick/__scribble_tick.yy",},},
     {"id":{"name":"CameraPositon","path":"scripts/CameraPositon/CameraPositon.yy",},},
     {"id":{"name":"check_for_gamepad","path":"scripts/check_for_gamepad/check_for_gamepad.yy",},},
-    {"id":{"name":"draw_my_weapon","path":"scripts/draw_my_weapon/draw_my_weapon.yy",},},
     {"id":{"name":"draw_text_scribble_ext","path":"scripts/draw_text_scribble_ext/draw_text_scribble_ext.yy",},},
     {"id":{"name":"draw_text_scribble","path":"scripts/draw_text_scribble/draw_text_scribble.yy",},},
     {"id":{"name":"input_accessibility_global_cooldown_get","path":"scripts/input_accessibility_global_cooldown_get/input_accessibility_global_cooldown_get.yy",},},
@@ -565,7 +560,6 @@
     {"id":{"name":"spr_collision","path":"sprites/spr_collision/spr_collision.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},},
-    {"id":{"name":"spr_gun","path":"sprites/spr_gun/spr_gun.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_spell","path":"sprites/spr_spell/spr_spell.yy",},},
     {"id":{"name":"spr_testBullet","path":"sprites/spr_testBullet/spr_testBullet.yy",},},

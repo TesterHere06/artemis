@@ -5,20 +5,6 @@ yspd = lengthdir_y(spd, dir);
 x += xspd;
 y += yspd;
 
-//Cleanup
-
-
-//Collision
 if place_meeting(x, y, obj_collision){
-	destroy = true;
-}
-
-//bullet out of range
-if point_distance(xstart, ystart, x, y) > maxDist{
-	destroy = true;	
-}
-
-//Destroy
-if destroy == true{
 	instance_destroy();
 }

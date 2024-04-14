@@ -32,18 +32,15 @@ if input_check("special") and global.Stamina > 0 and (input_check("left") or inp
 	}
 }
 
-centerY = y + centerYoffset;
-aimDir = point_direction(x, centerY, obj_cursor.x, obj_cursor.y);
-// Shooting the weapon
-if shootTimer > 0 {shootTimer-- };
-if input_check_pressed("shoot") && shootTimer <= 0 {
-	//Reset the time
-	shootTimer = shootCooldown;
+aimDir = point_direction(x, y, obj_cursor.x, obj_cursor.y);
+// laser beam create
+if input_check_pressed("shoot") {    
+//    if !(instance_exists(obj_bullet)) {
+//    instance_create_depth(mouse_x , mouse_y, 0, obj_bullet );
+//	}
 	
 	// Create the bullet direction
-	var _xOffset = lengthdir_x(weaponLength + weaponOffsetDist, aimDir);
-	var _yOffset = lengthdir_y(weaponLength + weaponOffsetDist, aimDir);
-	var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj)
+	var _bulletInst = instance_create_depth(x, y, depth-100, obj_testBullet)
 	
 	//change bullet direction
 	with(_bulletInst){
