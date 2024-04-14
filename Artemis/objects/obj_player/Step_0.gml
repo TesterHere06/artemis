@@ -13,6 +13,10 @@ if !global.IsGamepad {
 //get damaged
 get_damaged(obj_damagePlayer, true);
 
+if hp <= 0{
+	room_restart();
+}
+
 if global.IsGamepad {
 	var hor = gamepad_axis_value(0, gp_axislh);
 	var ver = gamepad_axis_value(0, gp_axislv);
