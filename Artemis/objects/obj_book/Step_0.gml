@@ -1,11 +1,11 @@
 if input_check_pressed("book"){
-	BookWantsOpen = !BookWantsOpen
+	global.BookWantsOpen = !global.BookWantsOpen
 }
 
-if BookWantsOpen and global.BookOpen < 1 {
+if global.BookWantsOpen and global.BookOpen < 1 {
 	global.BookOpen += 0.1
 } else {
-	if !BookWantsOpen and global.BookOpen > 0 {
+	if !global.BookWantsOpen and global.BookOpen > 0 {
 		global.BookOpen -= 0.1
 	}
 }
