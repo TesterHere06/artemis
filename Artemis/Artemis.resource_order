@@ -504,5 +504,7 @@
     {"name":"spr_spwaner","order":14,"path":"sprites/spr_spwaner/spr_spwaner.yy",},
     {"name":"spr_testBullet","order":7,"path":"sprites/spr_testBullet/spr_testBullet.yy",},
     {"name":"spr_tiles","order":8,"path":"sprites/spr_tiles/spr_tiles.yy",},
+    {"name":"spr_tilesReal","order":16,"path":"sprites/spr_tilesReal/spr_tilesReal.yy",},
+    {"name":"normal_floor","order":1,"path":"tilesets/normal_floor/normal_floor.yy",},
   ],
 }
