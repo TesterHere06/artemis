@@ -24,11 +24,11 @@ if !global.IsGamepad {
 		var hor = gamepad_axis_value(0, gp_axisrh)
 		var ver = gamepad_axis_value(0, gp_axisrv)
 		var bindings = min( 1, sqrt( hor*hor + ver*ver ) ) / sqrt( hor*hor + ver*ver )
-		cursor_x = obj_player.x + hor * bindings * 160;
-		cursor_y = obj_player.y + ver * bindings * 160;
+		cursor_x = obj_player.x-x + hor * bindings * 160;
+		cursor_y = obj_player.y-y + ver * bindings * 160;
 	} else {
-		cursor_x += gamepad_axis_value(0, gp_axisrh) * 160
-		cursor_y += gamepad_axis_value(0, gp_axisrv) * 160
+		cursor_x += gamepad_axis_value(0, gp_axisrh) * 20
+		cursor_y += gamepad_axis_value(0, gp_axisrv) * 20
 	}
 }
 draw_set_alpha(1)

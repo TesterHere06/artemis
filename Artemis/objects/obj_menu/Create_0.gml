@@ -1,7 +1,7 @@
+gamepad_set_axis_deadzone(0, 0.3);
+
 playing = 0;
 paused = 1;
-
-prevcontrollerinput = 0
 
 around = 0;
 manual = 1;

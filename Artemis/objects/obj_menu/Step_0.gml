@@ -11,12 +11,17 @@ if input_check_pressed("pause") {
 		surface_copy(surface, 0, 0, application_surface);
 		instance_deactivate_all(true);
 		instance_activate_object(input_controller_object);
-		prevcontrollerinput = global.GamepadCursorMode;
 		global.GamepadCursorMode = manual;
 		state = paused;
 	} else if (state == paused) {
-		global.GamepadCursorMode = prevcontrollerinput;
+		global.GamepadCursorMode = around;
 		state = playing;
 		instance_activate_all();
 	}
+}
+
+if input_check_pressed("gpcursor") {
+	 if global.GamepadCursorMode == around {
+		 global.GamepadCursorMode = manual;
+	 } else global.GamepadCursorMode = around;
 }

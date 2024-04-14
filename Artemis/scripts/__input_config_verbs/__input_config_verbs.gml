@@ -53,6 +53,8 @@ function __input_config_verbs()
 			
 			book: input_binding_gamepad_button(gp_shoulderl),
             
+			gpcursor: input_binding_gamepad_button(gp_stickr),
+			
             pause: input_binding_gamepad_button(gp_start),
         },
         
