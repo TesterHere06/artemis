@@ -1,5 +1,3 @@
-check_for_gamepad()
-
 if !global.IsGamepad {
 	var hor = (input_check("right") - input_check("left"));
 	var ver = (input_check("down") - input_check("up"));
@@ -17,8 +15,8 @@ if global.IsGamepad {
 
 hspeed = hor * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;
 vspeed = ver * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;
-if x < obj_cursor.x {image_xscale = 1}
-else {image_xscale = -1};
+if x < obj_cursor.x {image_xscale = 2}
+else {image_xscale = -2};
 
 if input_check("special") and global.Stamina > 0 and (input_check("left") or input_check("up") or input_check("down") or input_check("right")) > 0 {
 	if global.BonusSpeed < 3 {
@@ -34,7 +32,7 @@ if input_check("special") and global.Stamina > 0 and (input_check("left") or inp
 	}
 }
 
-aimDir = point_direction(x, y, mouse_x, mouse_y);
+aimDir = point_direction(x, y, obj_cursor.x, obj_cursor.y);
 // laser beam create
 if input_check_pressed("shoot") {    
 //    if !(instance_exists(obj_bullet)) {

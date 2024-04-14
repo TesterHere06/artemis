@@ -4,10 +4,12 @@ global.BonusSpeed = 0;
 global.MaxStamina = 100;
 global.Stamina = global.MaxStamina;
 global.IsGamepad = false
+image_xscale = 2
+image_yscale = 2
 
 aimDir = 0;
 
 x = 200
 y = 100
 
-instance_create_depth(0,0,0, obj_pausemenu)
+instance_create_depth(0,0,0, obj_menu)

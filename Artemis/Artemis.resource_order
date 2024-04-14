@@ -84,7 +84,7 @@
     {"name":"obj_stamina","order":2,"path":"objects/obj_stamina/obj_stamina.yy",},
     {"name":"obj_testBullet","order":12,"path":"objects/obj_testBullet/obj_testBullet.yy",},
     {"name":"obj_weaponParent","order":3,"path":"objects/obj_weaponParent/obj_weaponParent.yy",},
-    {"name":"obj_pausemenu","order":4,"path":"objects/obj_pausemenu/obj_pausemenu.yy",},
+    {"name":"obj_menu","order":4,"path":"objects/obj_menu/obj_menu.yy",},
     {"name":"__input_axis_is_directional","order":9,"path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},
     {"name":"__input_binding_get_label","order":10,"path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},
     {"name":"__input_class_chord_definition","order":1,"path":"scripts/__input_class_chord_definition/__input_class_chord_definition.yy",},
