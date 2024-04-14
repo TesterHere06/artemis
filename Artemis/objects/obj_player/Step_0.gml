@@ -93,7 +93,6 @@ if place_meeting(x, y + vspeed, obj_collision) {
 	if input_check_pressed("up") {
 		global.CurrentCombo += "W";
 	}
-	show_debug_message(global.CurrentCombo)
 }
 
 if global.WeaponChanged > 0 {

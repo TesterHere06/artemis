@@ -36,10 +36,12 @@ if Animation[1] > 0 {
 	image_blend = -1;
 }
 
-if position_meeting(mouse_x, mouse_y, id) and Cooldown < 1 {
+if string_length(global.CurrentCombo) > 0 and string_pos(global.CurrentCombo, global.Combo[SpellID]) = 1 and Cooldown < 1 {
 	Animation[0] += 0.1
 } else Animation[0] -= 0.1
-Animation[0] = clamp(Animation[0], 0, 1)
+if global.CurrentCombo == global.Combo[SpellID] and Cooldown < 1 {
+	Animation[0] = clamp(Animation[0], 0, 1)
+} else Animation[0] = clamp(Animation[0], 0, 0.5)
 
 if input_check_pressed("shoot") and global.Combo[SpellID] == global.CurrentCombo and Cooldown < 1 {
 	image_blend = c_gray;

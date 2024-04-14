@@ -1,4 +1,6 @@
 global.PlayerSpeed = 3;
+global.PlayerHP = 7;
+global.PlayerMaxHP = 7;
 global.DiagonalSpeed = 1;
 global.BonusSpeed = 0;
 global.MaxStamina = 100;

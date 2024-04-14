@@ -16,7 +16,7 @@ y += 1248 - global.BookOpen * 120;
 var isspell = false
 if string_length(global.CurrentCombo) > 0 {
 	for (i = 0; i < 4; i++) {
-		if string_pos(global.CurrentCombo, global.Combo[global.Spell[i].SpellID]) > 0 {
+		if string_pos(global.CurrentCombo, global.Combo[global.Spell[i].SpellID]) = 1 {
 			isspell = true
 		}
 	}
