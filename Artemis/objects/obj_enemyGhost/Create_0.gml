@@ -3,6 +3,8 @@
 // Inherit the parent event
 event_inherited();
 image_yscale = 2;
+image_xscale = 2;
+
 
 spd = .5;
 dir = 0;

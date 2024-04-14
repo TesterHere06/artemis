@@ -10,7 +10,6 @@ yspd = lengthdir_y(spd, dir);
 //get correct face
 if xspd > 0{face =2;}
 if xspd < 0{face = -2;}
-image_xscale = face;
 
 //Collisions
 if place_meeting(x + xspd, y, obj_enemyParent){
