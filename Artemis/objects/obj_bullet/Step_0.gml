@@ -26,12 +26,12 @@ for (i = 0; i < max_length; i++ ) {
 
 #region    collision  -> with global enemy to change its values (hp or something)
 
-if (instance_exists(obj_enemy1)) {
+if (instance_exists(obj_enemyParent)) {
     if (refresh_hit == true) {
         refresh_hit = false;
 
         var _list = ds_list_create();
-        var hits = collision_line_list(x, y, xEnd, yEnd, obj_enemy1, 0, 0, _list, 0);
+        var hits = collision_line_list(x, y, xEnd, yEnd, obj_enemyParent, 0, 0, _list, 0);
 
         if (hits > 0) {
             show_debug_message("Laser collided with enemy!");

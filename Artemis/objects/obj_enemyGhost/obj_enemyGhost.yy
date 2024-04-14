@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy1",
+  "%Name":"obj_enemyGhost",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemy1",
+  "name":"obj_enemyGhost",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

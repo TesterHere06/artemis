@@ -1,6 +1,6 @@
 /// @description Making enemies go to player
 
-with(obj_enemyParent){
+with(obj_enemyGhost){
 	direction = point_direction(x,y, obj_player.x, obj_player.y);
 	speed = walkSpeed;
 	

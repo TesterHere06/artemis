@@ -1,19 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemyParent",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_damageEnemy",
+  "eventList":[],
   "managed":true,
-  "name":"obj_enemyParent",
+  "name":"obj_damageEnemy",
   "overriddenProperties":[],
   "parent":{
     "name":"Meta",
     "path":"folders/Objects/Meta.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_damageParent",
+    "path":"objects/obj_damageParent/obj_damageParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
