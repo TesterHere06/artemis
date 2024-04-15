@@ -123,8 +123,8 @@
   "optionsFile":"options.json",
   "packageId":"",
   "parent":{
-    "name":"LootLockerLeaderboards",
-    "path":"",
+    "name":"Artemis",
+    "path":"Artemis.yyp",
   },
   "productId":"",
   "resourceType":"GMExtension",

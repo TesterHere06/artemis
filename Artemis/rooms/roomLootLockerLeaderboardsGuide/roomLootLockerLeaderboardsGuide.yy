@@ -13,8 +13,8 @@
   ],
   "name":"roomLootLockerLeaderboardsGuide",
   "parent":{
-    "name":"LootLockerLeaderboards",
-    "path":"",
+    "name":"Artemis",
+    "path":"Artemis.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{

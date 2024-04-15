@@ -10,8 +10,8 @@
   "name":"objLLPlayerManager",
   "overriddenProperties":[],
   "parent":{
-    "name":"GameLogicObjects",
-    "path":"",
+    "name":"Artemis",
+    "path":"Artemis.yyp",
   },
   "parentObjectId":null,
   "persistent":true,

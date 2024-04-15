@@ -27,8 +27,8 @@
   ],
   "name":"roomLLRockyRunnerExample",
   "parent":{
-    "name":"LootLockerExample_RockyRunner",
-    "path":"",
+    "name":"Artemis",
+    "path":"Artemis.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{
