@@ -57,7 +57,7 @@ if input_check("shoot") && shootTimer <= 0 {
 	var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
 	var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
 	
-	var _sound = weapon.sound
+	var _sound = weapon.sound;
 	var _spread = weapon.spread;
 	var _hose = weapon.hose
 	var _spreadDiv = _spread / max(weapon.bulletNum-1, 1);

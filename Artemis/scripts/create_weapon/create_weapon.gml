@@ -7,6 +7,7 @@ function create_weapon(_sprite = spr_gun, _weaponLength = 0, _bulletObj = obj_te
 	bulletNum = _bulletNum;
 	spread = _spread;
 	hose = _hose;
+	sound = _sound;
 }
 
 //the weapons
