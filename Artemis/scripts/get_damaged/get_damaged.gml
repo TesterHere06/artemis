@@ -38,7 +38,10 @@ function get_damaged(_damageObject, _iframes = false)
 			}
 		}
 		
-		exit;
+			//Clamp HP
+			hp = clamp (hp, 0, maxHp);
+		
+			exit;
 	}
 	
 	//Make sure image flicking stops
@@ -109,6 +112,9 @@ function get_damaged(_damageObject, _iframes = false)
 			}
 		}
 	}
+	
+	//Clamp HP
+	hp = clamp (hp, 0, maxHp);
 }
 
 
