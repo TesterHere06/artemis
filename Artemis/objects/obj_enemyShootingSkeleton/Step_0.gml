@@ -10,12 +10,6 @@ switch(state){
 		spd = chaseSpd;
 		
 		
-		
-		var _camLeft = camera_get_view_x(view_camera[0]);
-		var _camRight = _camLeft + camera_get_view_width(view_camera[0]);
-		var _camTop = camera_get_view_y(view_camera[0])
-		var _camBottom = _camTop + camera_get_view_height(view_camera[0]);
-		
 		//Transition to shooting stage
 		if shootTimer > cooldownTime{
 			//Go to shooting state
@@ -24,10 +18,9 @@ switch(state){
 			//Reset timer so shooting state can use it too
 			shootTimer = 0;
 		}
-		//Only add to timer if on screen
-		if bbox_right > _camLeft && bbox_left < _camRight && bbox_bottom > _camTop && bbox_top < _camBottom {
-			shootTimer++;
-		}
+		
+		shootTimer++;
+
 			
 			
 		
@@ -94,10 +87,10 @@ else{
 }
 
 //Collisions
-if place_meeting(x + xspd, y, obj_enemyParent){
+if place_meeting(x + xspd, y, obj_enemyParent) || place_meeting(x + xspd, y, obj_collision){
 	xspd = 0;
 }
-if place_meeting(x,y +yspd, obj_enemyParent){
+if place_meeting(x,y +yspd, obj_enemyParent) || place_meeting(x + xspd, y, obj_collision){
 	yspd = 0;	
 }
 
@@ -111,5 +104,3 @@ depth = -y;
 // Inherit the parent event
 // Getting damaged and dying
 event_inherited();
-
-image_xscale = 2;
