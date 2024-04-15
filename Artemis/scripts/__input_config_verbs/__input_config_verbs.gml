@@ -45,7 +45,7 @@ function __input_config_verbs()
             left:  [input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
             right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
             
-            accept:  input_binding_gamepad_button(gp_face1),
+            accept:  input_binding_gamepad_button(gp_face1, gp_shoulderlb, gp_shoulderrb),
             cancel:  input_binding_gamepad_button(gp_face2),
             action:  input_binding_gamepad_button(gp_face3),
             special: input_binding_gamepad_button(gp_shoulderlb),

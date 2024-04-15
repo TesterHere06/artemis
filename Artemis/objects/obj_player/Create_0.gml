@@ -5,7 +5,6 @@ global.BonusSpeed = 0;
 global.BuffSpeed = 0;
 global.MaxStamina = 100;
 global.Stamina = global.MaxStamina;
-global.IsGamepad = false
 global.WeaponChanged = 0;
 global.CurrentCombo = "";
 global.SoulCounter = 10;

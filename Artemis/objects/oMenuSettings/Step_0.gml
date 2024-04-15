@@ -4,9 +4,7 @@ if !global.IsGamepad {
 		image_index = 2
 	}
 	if mouse_check_button_released(mb_left) && position_meeting(mouse_x, mouse_y, id) && pressed = 1{
-		global.cursor_x = mouse_x;
-		global.cursor_y = mouse_y;
-		room_goto_next();
+		game_end()
 	}
 } else {
 	if input_check_pressed("up") {
@@ -17,15 +15,13 @@ if !global.IsGamepad {
 		GamepadSelected ++
 		if GamepadSelected > 2 {GamepadSelected = 0;}
 	}
-	if GamepadSelected = 0 {
+	if GamepadSelected = 1 {
 		image_index = 1
 		if input_check("accept") {
 			image_index = 2
 		}
 		if input_check_released("accept") {
-			global.cursor_x = mouse_x;
-			global.cursor_y = mouse_y;
-			room_goto_next();
+			game_end()
 		}
 	} else image_index = 0;
 }

@@ -1,5 +1,3 @@
-check_for_gamepad()
-
 if state = playing {
 	CameraPositon()
 }
