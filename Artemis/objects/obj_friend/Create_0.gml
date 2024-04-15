@@ -4,7 +4,6 @@
 event_inherited();
 image_yscale = 2;
 image_xscale = 2;
-image_alpha = 0.01;
 
 damage = 1
 

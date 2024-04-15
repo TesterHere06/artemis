@@ -3,11 +3,20 @@ switch(state){
 	// Spawn in from grave
 	case -1:
 
-		image_alpha += 0.01
+		sprite_index = spr_friendRise;
+
 		if image_alpha >= 1{
-			state = 0
+			//set the right speed and direction
+			spd = emergeSpd;
+			dir = 270;
 		}
 		
+		if image_index >= image_number - 1 {
+			sprite_index = spr_friend;
+			image_index = 0
+			state = 0;
+		}
+
 	break
 	
 	
@@ -91,10 +100,10 @@ yspd = lengthdir_y(spd, dir);
 
 //get correct face
 if dir > 90 && dir < 270{
-	face = -2;
+	image_xscale = -2;
 }
 else{
-	face = 2;
+	image_xscale = 2;
 }
 
 
@@ -111,5 +120,3 @@ if healthstuff < 1 and state != 0{
 }
 // Inherit the parent event
 // Getting damaged and dying
-
-show_debug_message(string(healthstuff) + " " + string(state))
