@@ -27,7 +27,7 @@ switch (state){
 //Out of bounds
 var _pad = 15;
 if bbox_right < _pad || bbox_left > room_width || bbox_bottom < 0 || bbox_top > room_height{
-	destroy == true;	
+	destroy = true;	
 }
 
 //Player hit 

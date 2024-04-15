@@ -20,6 +20,9 @@ if (state != paused) {
 	draw_rectangle(20, surface_get_height(application_surface), 20+obj_player.maxhp*25, surface_get_height(application_surface)-40, false)
 	draw_set_color(#89132a)
 	draw_rectangle(20, surface_get_height(application_surface), 20+obj_player.hp*25, surface_get_height(application_surface)-40, false)
+	draw_set_color(c_white)
+	draw_set_font(Joystix)
+	draw_text(40, surface_get_height(application_surface) - 40, string(global.SoulCounter))
 }
 
 if !global.IsGamepad {
