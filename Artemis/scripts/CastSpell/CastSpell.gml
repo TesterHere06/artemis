@@ -4,11 +4,11 @@ function CastSpell(){
 	}
 	if SpellID == 1 {
 		obj_player.weapon = global.WeaponList.shotgun
-		global.WeaponChanged = 600;
+		global.WeaponChanged = 1800;
 	}
 	if SpellID == 2 {
 		obj_player.weapon = global.WeaponList.assaultrifle
-		global.WeaponChanged = 300;
+		global.WeaponChanged = 1200;
 	}
 	if SpellID == 3 {
 		instance_create_depth(global.cursor_x, global.cursor_y, -3, obj_fireball)

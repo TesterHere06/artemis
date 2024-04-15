@@ -7,6 +7,7 @@ switch (state){
 		}
 		// set the depth to make the player more visible
 		depth = -y - 50;
+		image_speed = 0
 	break;
 	// SHoot / travel
 	case 1:
@@ -17,6 +18,7 @@ switch (state){
 		
 		//Updated depth
 		depth = -y;
+		image_speed = 20
 	
 	break;
 	
@@ -36,11 +38,6 @@ if place_meeting(x, y, obj_collision) && playerDestroy == true {destroy = true;}
 if destroy == true {
 	instance_destroy();
 	create_animated_vfx(spr_poof, x, y, -y, 0)
-}
-
-//Wall collision
-if place_meeting(x, y, obj_collision) {
-	destroy = true;
 }
 
 if image_index = 3 image_speed = 0

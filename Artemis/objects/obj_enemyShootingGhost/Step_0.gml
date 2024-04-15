@@ -7,8 +7,8 @@ switch(state){
 	// Spawn in from grave
 	case -1:
 		//Enterance animation
-		if enterAnim == false{
-			
+		if enterAnim {
+			sprite_index = spr_enemyShootyGhostRise;
 		}
 		
 		//Walking out
@@ -19,9 +19,14 @@ switch(state){
 			spd = emergeSpd;
 			dir = 270;
 		}
+		
+		if image_index >= image_number - 1 {
+			sprite_index = spr_enemyShootyGhost;
+			image_index = 0
+		}
 		//Switch to chasing state
-		if !place_meeting(x, y, obj_collision){
-			state = 0;	
+		if !place_meeting(x, y, obj_collision) and sprite_index == spr_enemyShootyGhost{
+			state = 0;
 		}
 		
 	break

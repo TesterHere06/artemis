@@ -12,14 +12,14 @@ dir = 0;
 xspd = 0;
 yspd = 0;
 
-enterAnim = false;
+enterAnim = true;
 
 face = 1;
 
 Anim = 0
 
 // State machine
-state = 0;
+state = -1;
 
 cooldownTime = 3;
 shootTimer = irandom(cooldownTime);
@@ -28,3 +28,4 @@ recoverTime = 5;
 bulletInst = noone;
 bulletXoff = 15;
 bulletYoff = -30;
+emergeSpd = .25;

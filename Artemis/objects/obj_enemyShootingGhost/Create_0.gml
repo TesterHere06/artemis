@@ -11,7 +11,7 @@ xspd = 0;
 yspd = 0;
 
 face = 1;
-enterAnim = false;
+enterAnim = true;
 
 fadeSpd = 1/15;
 emergeSpd = .25;
@@ -19,7 +19,7 @@ emergeSpd = .25;
 Anim = 0
 
 // State machine
-state = 0;
+state = -1;
 
 cooldownTime = 4*60;
 shootTimer = irandom(cooldownTime);

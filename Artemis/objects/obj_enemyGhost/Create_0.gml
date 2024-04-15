@@ -15,7 +15,7 @@ Anim = 0
 
 face = 1;
 
-enterAnim = false;
+enterAnim = true;
 
 fadeSpd = 1/15;
 emergeSpd = .25;
@@ -23,4 +23,4 @@ spd = 0;
 chaseSpd = .5;
 
 // State machine
-state = 0;
+state = -1;

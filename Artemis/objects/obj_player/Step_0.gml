@@ -61,6 +61,7 @@ if input_check("shoot") && shootTimer <= 0 {
 	var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
 	
 	var _spread = weapon.spread;
+	var _hose = weapon.hose
 	var _spreadDiv = _spread / max(weapon.bulletNum-1, 1);
 	
 	var _weaponTipX = x + _xOffset;
@@ -69,7 +70,6 @@ if input_check("shoot") && shootTimer <= 0 {
 	//Create weapon flash
 	create_animated_vfx(spr_flashWeapon, _weaponTipX, _weaponTipY, depth-10, aimDir);
 	
-	
 	// Create the correct number of bullets
 	for (var i = 0; i < weapon.bulletNum; i++){
 		
@@ -77,7 +77,7 @@ if input_check("shoot") && shootTimer <= 0 {
 	
 		//change bullet direction
 		with(_bulletInst){
-			dir = other.aimDir - _spread/2 + _spreadDiv*i;
+			dir = other.aimDir - _spread/2 + _spreadDiv*i + random_range(-_hose,_hose);
 		}
 	}
 }

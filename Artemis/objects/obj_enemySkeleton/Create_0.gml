@@ -14,7 +14,7 @@ swirl = random_range(-30,30)
 
 face = 1;
 
-enterAnim = false;
+enterAnim = true;
 
 Anim = 0
 
@@ -24,4 +24,4 @@ spd = 0;
 chaseSpd = .5;
 
 // State machine
-state = 0;
+state = -1;
