@@ -1,15 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_damagearea",
-  "eventList":[],
+  "%Name":"obj_fireball",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_damagearea",
+  "name":"obj_fireball",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_damageEnemy",
+    "path":"objects/obj_damageEnemy/obj_damageEnemy.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_fireball",
+    "path":"sprites/spr_fireball/spr_fireball.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

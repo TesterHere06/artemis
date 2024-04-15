@@ -71,4 +71,3 @@ if input_check_pressed("shoot") and global.Combo[SpellID] == global.CurrentCombo
 		global.CurrentCombo = "";
 	}
 }
-show_debug_message(string(SpellID))

@@ -11,11 +11,10 @@ function CastSpell(){
 		global.WeaponChanged = 300;
 	}
 	if SpellID == 3 {
-		obj_player.weapon = global.WeaponList.assaultrifle
-		global.WeaponChanged = 300;
+		instance_create_depth(global.cursor_x, global.cursor_y, -3, obj_fireball)
 	}
 	if SpellID == 4 {
-		global.BuffSpeed = 2
+		global.BuffSpeed = 1
 		global.BuffDuration[0] = 600
 	}
 }
