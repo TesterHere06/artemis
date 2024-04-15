@@ -9,6 +9,8 @@ switch(state){
 		//Set the correct speed
 		spd = chaseSpd;
 		
+		shootTimer++;
+		
 		
 		//Transition to shooting stage
 		if shootTimer > cooldownTime{
@@ -18,9 +20,6 @@ switch(state){
 			//Reset timer so shooting state can use it too
 			shootTimer = 0;
 		}
-		
-		shootTimer++;
-
 			
 			
 		
@@ -87,10 +86,10 @@ else{
 }
 
 //Collisions
-if place_meeting(x + xspd, y, obj_enemyParent) || place_meeting(x + xspd, y, obj_collision){
+if place_meeting(x + xspd, y, obj_enemyParent){
 	xspd = 0;
 }
-if place_meeting(x,y +yspd, obj_enemyParent) || place_meeting(x + xspd, y, obj_collision){
+if place_meeting(x,y +yspd, obj_enemyParent){
 	yspd = 0;	
 }
 
@@ -104,3 +103,4 @@ depth = -y;
 // Inherit the parent event
 // Getting damaged and dying
 event_inherited();
+
