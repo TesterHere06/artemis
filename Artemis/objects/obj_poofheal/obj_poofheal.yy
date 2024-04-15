@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_poof",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_poofheal",
+  "eventList":[],
   "managed":true,
-  "name":"obj_poof",
+  "name":"obj_poofheal",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_haste",
-    "path":"sprites/spr_haste/spr_haste.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

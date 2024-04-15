@@ -14,7 +14,10 @@ function CastSpell(){
 		instance_create_depth(global.cursor_x, global.cursor_y, -3, obj_fireball)
 	}
 	if SpellID == 4 {
-		global.BuffSpeed = 1
+		global.BuffSpeed = 2
 		global.BuffDuration[0] = 600
+		instance_create_depth(obj_player.x, obj_player.y, -3, obj_poof)
+		instance_create_depth(obj_player.x, obj_player.y, -3, obj_poof)
+		instance_create_depth(obj_player.x, obj_player.y, -3, obj_poof)
 	}
 }
