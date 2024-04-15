@@ -7,9 +7,8 @@ switch(state){
 	// Spawn in from grave
 	case -1:
 		//Enterance animation
-		if image_alpha < 1{
-			//Don't walk while fading in
-			image_alpha += fadeSpd
+		if enterAnim == false{
+			
 		}
 		
 		//Walking out

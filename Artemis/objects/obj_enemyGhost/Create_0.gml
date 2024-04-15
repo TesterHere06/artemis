@@ -14,5 +14,12 @@ swirl = random_range(-30,30)
 
 face = 1;
 
+enterAnim = false;
+
+fadeSpd = 1/15;
+emergeSpd = .25;
+spd = 0;
+chaseSpd = .5;
+
 // State machine
 state = 0;
