@@ -1,7 +1,7 @@
 /// @description Making enemies go to player
 
 with(obj_enemyGhost){
-	direction = point_direction(x,y, obj_player.x, obj_player.y);
+	direction = point_direction(x,y, obj_player.x, obj_player.y) + swirl;
 	speed = walkSpeed;
 	
 	if (obj_player.x > x){image_xscale = 2;}

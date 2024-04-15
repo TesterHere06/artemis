@@ -1,6 +1,6 @@
 // Chase the player
 if instance_exists(obj_player){
-	dir = point_direction(x,y, obj_player.x, obj_player.y)
+	dir = point_direction(x,y, obj_player.x, obj_player.y) + swirl;
 }
 
 //getting the speeds
