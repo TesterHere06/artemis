@@ -22,3 +22,15 @@ switch (state){
 	break;
 	
 }
+
+// Clean up
+if hitConfirm == true && playerDestroy == true {destroy = true;}
+
+if destroy == true {
+	instance_destroy();
+	create_animated_vfx(spr_poof, x, y, -y, 0)
+}
+
+if place_meeting(x, y, obj_collision) {
+	destroy = true;
+}
