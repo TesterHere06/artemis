@@ -4,7 +4,6 @@ if global.BookOpen < 0.6 {
 		SpeedUp += 0.2
 	} else SpeedUp -= 0.2
 	SpeedUp = clamp(SpeedUp, 0, 1);
-	show_debug_message(string(SpeedUp))
 if !global.IsGamepad {
 	var hor = (input_check("right") - input_check("left"));
 	var ver = (input_check("down") - input_check("up"));
