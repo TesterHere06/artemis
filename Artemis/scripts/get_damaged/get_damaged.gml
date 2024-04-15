@@ -1,7 +1,8 @@
 
 // damage create event
 function get_damaged_create(_hp = 10, _iframes = false){
-hp = _hp;
+	maxHp = _hp;
+	hp = _hp;
 	if _iframes == true{
 		iframesTimer = 0;
 		iframeNumber = 90
