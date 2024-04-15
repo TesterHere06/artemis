@@ -102,7 +102,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},
-    {"id":{"name":"obj_damagearea","path":"objects/obj_damagearea/obj_damagearea.yy",},},
+    {"id":{"name":"obj_fireball","path":"objects/obj_fireball/obj_fireball.yy",},},
     {"id":{"name":"obj_damageEnemy","path":"objects/obj_damageEnemy/obj_damageEnemy.yy",},},
     {"id":{"name":"obj_damageParent","path":"objects/obj_damageParent/obj_damageParent.yy",},},
     {"id":{"name":"obj_damagePlayer","path":"objects/obj_damagePlayer/obj_damagePlayer.yy",},},

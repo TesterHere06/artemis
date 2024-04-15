@@ -1,4 +1,4 @@
-global.PlayerSpeed = 2;
+global.PlayerSpeed = 3;
 DiagonalSpeed = 1;
 SpeedUp = 0;
 global.BonusSpeed = 0;
