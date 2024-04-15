@@ -37,3 +37,4 @@ if GamepadSelected == 1 {
 	audio_group_set_gain(SFXGROUP, global.SoundVolume, 0)
 }
 }
+show_debug_message(string(x) + " " + string(mouse_x))
