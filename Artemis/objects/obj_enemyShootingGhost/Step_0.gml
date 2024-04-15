@@ -1,7 +1,20 @@
-// Chase the player
-if instance_exists(obj_player){
-	dir = point_direction(x,y, obj_player.x, obj_player.y)
+//State machine
+switch(state){
+	case 0:
+		// Chase the player
+		if instance_exists(obj_player){
+			dir = point_direction(x,y, obj_player.x, obj_player.y)
+		}
+		
+		//Set the correct speed
+		spd = chaseSpd;
+		
+	break
+	
 }
+
+
+
 
 //getting the speeds
 xspd = lengthdir_x(spd, dir);
