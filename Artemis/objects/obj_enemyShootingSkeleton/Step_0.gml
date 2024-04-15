@@ -9,8 +9,12 @@ switch(state){
 		//Set the correct speed
 		spd = chaseSpd;
 		
-		shootTimer++;
 		
+		
+		var _camLeft = camera_get_view_x(view_camera[0]);
+		var _camRight = _camLeft + camera_get_view_width(view_camera[0]);
+		var _camTop = camera_get_view_y(view_camera[0])
+		var _camBottom = _camTop + camera_get_view_height(view_camera[0]);
 		
 		//Transition to shooting stage
 		if shootTimer > cooldownTime{
@@ -19,6 +23,10 @@ switch(state){
 			
 			//Reset timer so shooting state can use it too
 			shootTimer = 0;
+		}
+		//Only add to timer if on screen
+		if bbox_right > _camLeft && bbox_left < _camRight && bbox_bottom > _camTop && bbox_top < camBottom {
+			shootTimer++;
 		}
 			
 			
