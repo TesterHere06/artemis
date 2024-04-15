@@ -2,8 +2,8 @@
   "$GMSound":"",
   "%Name":"ammoWallhit",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"SFXGROUP",
+    "path":"audiogroups/SFXGROUP",
   },
   "bitDepth":0,
   "bitRate":128,

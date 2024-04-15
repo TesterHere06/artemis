@@ -2,8 +2,8 @@
   "$GMSound":"",
   "%Name":"bossTime_level",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"MUSICGROUP",
+    "path":"audiogroups/MUSICGROUP",
   },
   "bitDepth":1,
   "bitRate":128,

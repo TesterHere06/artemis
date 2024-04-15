@@ -23,7 +23,7 @@ function get_damaged_cleanup(){
 }
 
 //damage step event
-function get_damaged(_damageObject, _iframes = false)
+function get_damaged(_damageObject, _iframes = false, _sound = snd_empty)
 {
 	//Special exit for ifram timer
 	if _iframes == true && iframesTimer > 0{

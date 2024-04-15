@@ -1,16 +1,16 @@
 {
   "$GMSound":"",
-  "%Name":"gunShoot",
+  "%Name":"snd_empty",
   "audioGroupId":{
-    "name":"SFXGROUP",
-    "path":"audiogroups/SFXGROUP",
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.03229,
-  "name":"gunShoot",
+  "duration":0.0,
+  "name":"snd_empty",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"gunShoot.wav",
+  "soundFile":"snd_empty",
   "type":0,
   "volume":1.0,
 }
