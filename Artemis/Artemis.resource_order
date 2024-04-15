@@ -124,6 +124,7 @@
     {"name":"oTutorial","order":5,"path":"objects/oTutorial/oTutorial.yy",},
     {"name":"Soul","order":1,"path":"particles/Soul/Soul.yy",},
     {"name":"rMenu","order":1,"path":"rooms/rMenu/rMenu.yy",},
+    {"name":"rStart","order":2,"path":"rooms/rStart/rStart.yy",},
     {"name":"__input_axis_is_directional","order":9,"path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},
     {"name":"__input_binding_get_label","order":10,"path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},
     {"name":"__input_class_chord_definition","order":1,"path":"scripts/__input_class_chord_definition/__input_class_chord_definition.yy",},
