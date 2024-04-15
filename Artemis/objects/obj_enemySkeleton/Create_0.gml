@@ -21,7 +21,8 @@ Anim = 0
 fadeSpd = 1/15;
 emergeSpd = .25;
 spd = 0;
-chaseSpd = .5;
+chaseSpd = 1;
+hp = 20
 
 // State machine
 state = -1;

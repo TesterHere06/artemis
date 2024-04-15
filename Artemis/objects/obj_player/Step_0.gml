@@ -17,13 +17,6 @@ if !global.IsGamepad {
 	}
 }
 
-//get damaged
-get_damaged(obj_damagePlayer, true);
-
-if hp <= 0{
-	room_restart();
-}
-
 if global.IsGamepad {
 	var hor = gamepad_axis_value(0, gp_axislh);
 	var ver = gamepad_axis_value(0, gp_axislv);
@@ -32,8 +25,6 @@ if global.IsGamepad {
 
 hspeed = hor * (global.PlayerSpeed + global.BonusSpeed + global.BuffSpeed) * DiagonalSpeed * SpeedUp;
 vspeed = ver * (global.PlayerSpeed + global.BonusSpeed + global.BuffSpeed) * DiagonalSpeed * SpeedUp;
-if x < global.cursor_x {image_xscale = 2}
-else {image_xscale = -2};
 
 if input_check("special") and global.Stamina > 0 and (input_check("left") or input_check("up") or input_check("down") or input_check("right")) > 0 {
 	if global.BonusSpeed < 3 {
@@ -141,4 +132,14 @@ if global.BuffDuration[0] > 0 {
 	global.BuffDuration[0] --
 } else if global.BuffSpeed > 0 {
 	global.BuffSpeed -= 0.1
+}
+
+if x < global.cursor_x {image_xscale = 2}
+else {image_xscale = -2};
+
+//get damaged
+get_damaged(obj_damagePlayer, true);
+
+if hp <= 0{
+	room_restart();
 }

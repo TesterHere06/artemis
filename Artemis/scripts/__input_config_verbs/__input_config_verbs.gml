@@ -61,7 +61,7 @@ function __input_config_verbs()
             aim_right: input_binding_gamepad_axis(gp_axisrh, false),
             shoot:     [input_binding_gamepad_button(gp_shoulderrb)],
 			
-			book: input_binding_gamepad_button(gp_shoulderl),
+			book: input_binding_gamepad_button(gp_shoulderl,gp_shoulderr),
             
 			gpcursor: input_binding_gamepad_button(gp_stickr),
 			
