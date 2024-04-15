@@ -1,5 +1,4 @@
 SpellNumber = 0
-global.SpellListLength = 10
 Cooldown = 5
 SpellID = 0
 PrevSpellID = 0
