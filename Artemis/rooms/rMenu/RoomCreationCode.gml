@@ -1,0 +1,1 @@
+music_play(musMenu,true);

@@ -138,7 +138,6 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	timer =0
 	
 }
-
 if diff <= 30{
 	global.DiffText = "Easy"
 }
