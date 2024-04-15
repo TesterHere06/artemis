@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"LootLockerLeaderboardsDocumentation",
+  "name":"LootLockerLeaderboardsDocumentation",
+  "parent":{
+    "name":"LootLockerLeaderboards",
+    "path":"",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

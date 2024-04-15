@@ -4,6 +4,7 @@ if state = playing {
 		surface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 		surface_copy(surface, 0, 0, application_surface);
 		state = dying;
+		audio_play_sound(player_dead, 0, 0);
 	}
 }
 

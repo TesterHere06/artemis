@@ -1,5 +1,4 @@
 if hp <= 0{
-	audio_play_sound(player_dead,);
 	audio_stop_sound(bossTime_level)
 	sprite_index = spr_pl_death;
 	if image_index >= 3 image_speed = 0
