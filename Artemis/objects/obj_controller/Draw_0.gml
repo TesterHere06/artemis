@@ -9,7 +9,7 @@ var _enemyCountOffset = 12;
 var _ecHudX = _hudX;
 var _ecHudY = _hudY + _enemyCountOffset ;
 //BG of kill count
-draw_sprite(spr_killCount, 0, _ecHudX, _ecHudY);
+draw_sprite(spr_difficulty, 0, _ecHudX, _ecHudY);
 
 //Draw the text
 draw_set_halign(fa_left);
@@ -18,3 +18,14 @@ draw_set_font(Joystix_small);
 
 //The current enemy kill count
 draw_text(_ecHudX + 60, _ecHudY + 5, string(global.enemyKillCount));
+
+//BG of kill count
+draw_sprite(spr_killCount, 0, _ecHudX, _ecHudY+50);
+
+//Draw the text
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_set_font(Joystix_small);
+
+//The current enemy kill count
+draw_text(_ecHudX + 60, _ecHudY + 55, string(global.DiffText));

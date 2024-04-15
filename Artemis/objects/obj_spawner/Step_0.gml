@@ -139,3 +139,16 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	show_debug_log(diff);
 	
 }
+
+if diff <= 30{
+	global.DiffText = "Easy"
+}
+else if diff <= 60{
+	global.DiffText = "Medium"
+}
+else if diff <= 100{
+	global.DiffText = "Hard"
+}
+else{
+	global.DiffText = "Very Hard"
+}
