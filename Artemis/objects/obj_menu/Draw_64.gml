@@ -11,21 +11,20 @@ if (state == paused) {
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
 	draw_set_halign(fa_middle);
+	draw_set_font(Joystix)
 	draw_text(surface_get_width(application_surface) / 2, surface_get_height(application_surface) / 2,
 		"Game is Paused");
 }
 
 if (state != paused) {
+	draw_set_font(Joystix)
 	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 60);
 	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 120);
-	draw_sprite_part(spr_bars, 5, 0, 0, 396*obj_player.hp/obj_player.maxhp, 60, 20, surface_get_height(application_surface) - 60);
-	draw_sprite_part(spr_bars, 2, 0, 0, 396*global.SoulCounter/8, 60, 20, surface_get_height(application_surface) - 120);
+	draw_sprite_part(spr_bars, 5, 0, 0, 12+372*obj_player.hp/obj_player.maxhp, 60, 20, surface_get_height(application_surface) - 60);
+	draw_sprite_part(spr_bars, 2, 0, 0, 12+372*global.SoulCounter/32, 60, 20, surface_get_height(application_surface) - 120);
+	draw_text(410, surface_get_height(application_surface) - 120, "X" + string(global.SoulCounter))
 	draw_sprite(spr_bars, 4, 20, surface_get_height(application_surface) - 60);
 	draw_sprite(spr_bars, 1, 20, surface_get_height(application_surface) - 120);
-	draw_set_font(Joystix)
-	if global.SoulCounter > 8 {
-		draw_text(410, surface_get_height(application_surface) - 120, "X" + string(floor(global.SoulCounter/8)))
-	}
 }
 
 if !global.IsGamepad {
