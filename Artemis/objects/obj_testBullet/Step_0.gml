@@ -26,3 +26,5 @@ if destroy == true{
 	create_animated_vfx(spr_poof, x, y, depth)
 	instance_destroy();
 }
+
+if image_index = 3 image_speed = 0

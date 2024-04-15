@@ -5,7 +5,7 @@ if global.BookOpen < 0.6 {
 		sprite_index = spr_pl_walk;
 	} else {
 		SpeedUp -= 0.2
-		if image_index = image_number{
+		if image_index = image_number-1{
 			sprite_index = choose(spr_pl_idle0,spr_pl_idle0,spr_pl_idle0,spr_pl_idle0,spr_pl_idle1,spr_pl_idle2)
 		}
 	}
@@ -120,7 +120,7 @@ if place_meeting(x, y + vspeed, obj_collision) {
     vspeed = 0;
 }
 
-if SpeedUp >= 0.5 {
+if global.BonusSpeed >= 1 {
 	sprite_index = spr_pl_run;
 }
 
