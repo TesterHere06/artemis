@@ -1,7 +1,18 @@
 //spawn an enemy
 timer++
 depth = -y;
-
+if diff <= 30{
+	global.DiffText = "Easy"
+}
+else if diff <= 60{
+	global.DiffText = "Medium"
+}
+else if diff <= 100{
+	global.DiffText = "Hard"
+}
+else{
+	global.DiffText = "Very Hard"
+}
 
 //reset timer when enemy limits have been reached
 if instance_number(obj_enemyParent) >= global.activeEnemyMax{
@@ -137,16 +148,4 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	//Reset the timer
 	timer =0
 	
-}
-if diff <= 30{
-	global.DiffText = "Easy"
-}
-else if diff <= 60{
-	global.DiffText = "Medium"
-}
-else if diff <= 100{
-	global.DiffText = "Hard"
-}
-else{
-	global.DiffText = "Very Hard"
 }
