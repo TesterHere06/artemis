@@ -120,6 +120,9 @@ if place_meeting(x, y + vspeed, obj_collision) {
     vspeed = 0;
 }
 
+if SpeedUp >= 0.5 {
+	sprite_index = spr_pl_run;
+}
 
 if global.WeaponChanged > 0 {
 	global.WeaponChanged --
