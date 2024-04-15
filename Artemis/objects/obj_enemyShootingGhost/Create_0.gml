@@ -7,10 +7,11 @@ image_xscale = 2;
 
 hitVFX = false;
 spd = 0;
-chaseSpd = .5;
+chaseSpd = random_range(.5,.6);
 dir = 0;
 xspd = 0;
 yspd = 0;
+swirl = random_range(-30,30)
 
 face = 1;
 
