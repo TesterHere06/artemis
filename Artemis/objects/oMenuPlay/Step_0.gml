@@ -25,7 +25,8 @@ if !global.IsGamepad {
 		if input_check_released("accept") {
 			global.cursor_x = mouse_x;
 			global.cursor_y = mouse_y;
-			room_goto_next();
+			audio_stop_sound(funnyBit_MainMenu);
+			room_goto(Room1);
 		}
 	} else image_index = 0;
 }

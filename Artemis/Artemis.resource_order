@@ -537,6 +537,7 @@
     {"name":"gunShoot","order":4,"path":"sounds/gunShoot/gunShoot.yy",},
     {"name":"menuClick","order":10,"path":"sounds/menuClick/menuClick.yy",},
     {"name":"pickupCoin","order":9,"path":"sounds/pickupCoin/pickupCoin.yy",},
+    {"name":"player_dead","order":13,"path":"sounds/player_dead/player_dead.yy",},
     {"name":"playerHurt","order":2,"path":"sounds/playerHurt/playerHurt.yy",},
     {"name":"RetroFunk_level","order":6,"path":"sounds/RetroFunk_level/RetroFunk_level.yy",},
     {"name":"shotgunShoot","order":3,"path":"sounds/shotgunShoot/shotgunShoot.yy",},

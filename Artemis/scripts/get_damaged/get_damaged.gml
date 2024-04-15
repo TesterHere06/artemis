@@ -70,6 +70,7 @@ function get_damaged(_damageObject, _iframes = false, _sound = snd_empty)
 			//check if this instance is already in the damage list
 			if _iframes == true || ds_list_find_index(damageList, _inst) == -1
 			{
+				audio_play_sound(_sound, 0, 0);
 				//add the new damage instance to the damage list
 				if _iframes == false
 				{

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":172.78133,
+  "duration":340.61063,
   "name":"bossTime_level",
   "parent":{
     "name":"Sounds",

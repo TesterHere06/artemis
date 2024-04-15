@@ -1,5 +1,5 @@
 // recieve damage
-get_damaged(obj_damageEnemy)
+get_damaged(obj_damageEnemy, false, enemyHurt)
 //death
 if hp <= 0{
 	//add to total kill count
