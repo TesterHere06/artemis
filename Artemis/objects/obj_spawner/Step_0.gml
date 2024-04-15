@@ -1,10 +1,10 @@
 //spawn an enemy
-timer ++
+timer++
 
-if timer >= spawnTime{
+if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 
 	//Create an enemy
-	var _inst = instance_create_depth(x, y, depth-1, obj_enemySkeleton);
+	var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingGhost);
 	with(_inst){
 		
 		image_alpha = 0;
