@@ -84,6 +84,7 @@
     {"name":"obj_damagePlayerTest","order":9,"path":"objects/obj_damagePlayerTest/obj_damagePlayerTest.yy",},
     {"name":"obj_damagingarea","order":27,"path":"objects/obj_damagingarea/obj_damagingarea.yy",},
     {"name":"obj_enemyBullet","order":20,"path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},
+    {"name":"obj_enemyBullet2","order":30,"path":"objects/obj_enemyBullet2/obj_enemyBullet2.yy",},
     {"name":"obj_enemyGhost","order":11,"path":"objects/obj_enemyGhost/obj_enemyGhost.yy",},
     {"name":"obj_enemyParent","order":5,"path":"objects/obj_enemyParent/obj_enemyParent.yy",},
     {"name":"obj_enemyShootingGhost","order":19,"path":"objects/obj_enemyShootingGhost/obj_enemyShootingGhost.yy",},

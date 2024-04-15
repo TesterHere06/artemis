@@ -80,7 +80,7 @@ if healthstuff > 160 {
 	healthstuff = 160;
 }
 
-if place_meeting(x, y, obj_enemyParent) or place_meeting(x, y, obj_enemyBullet) {
+if place_meeting(x, y, obj_damagePlayer) {
 	healthstuff --
 }
 

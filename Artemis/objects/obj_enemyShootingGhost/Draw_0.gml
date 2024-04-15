@@ -5,4 +5,4 @@ if Anim > 186 Anim = 0
 //draw hp
 var _healthPercent = hp / maxHp;
 var _hpImage =_healthPercent * (sprite_get_number(spr_enemyHealthbar) - 1);
-draw_sprite(spr_enemyHealthbar, _hpImage, x, y - sprite_height -1);
+draw_sprite(spr_enemyHealthbar, _hpImage, x, y - sprite_height + 15);

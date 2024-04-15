@@ -110,6 +110,7 @@
     {"id":{"name":"obj_damagePlayerTest","path":"objects/obj_damagePlayerTest/obj_damagePlayerTest.yy",},},
     {"id":{"name":"obj_damagingarea","path":"objects/obj_damagingarea/obj_damagingarea.yy",},},
     {"id":{"name":"obj_enemyBullet","path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},},
+    {"id":{"name":"obj_enemyBullet2","path":"objects/obj_enemyBullet2/obj_enemyBullet2.yy",},},
     {"id":{"name":"obj_enemyGhost","path":"objects/obj_enemyGhost/obj_enemyGhost.yy",},},
     {"id":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},},
     {"id":{"name":"obj_enemyShootingGhost","path":"objects/obj_enemyShootingGhost/obj_enemyShootingGhost.yy",},},

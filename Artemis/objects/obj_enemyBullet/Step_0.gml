@@ -42,3 +42,6 @@ if destroy == true {
 if place_meeting(x, y, obj_collision) {
 	destroy = true;
 }
+
+image_angle = direction
+if image_index = 3 image_speed = 0

@@ -69,7 +69,7 @@ switch(state){
 		shootTimer++;
 		
 		if shootTimer == 1{
-			bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, obj_enemyBullet)
+			bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, obj_enemyBullet2)
 		}
 		
 		//Keep the bullet in the zombie's hands
