@@ -7,6 +7,17 @@ if(Grab){
     }else if(x > 1145){
         x = 1145
     }
+	if (xPrev > 30){
+		var _whynot = irandom_range(1, 1000)
+		if _whynot == 666{
+			audio_play_sound(snd_explosion, 0, 0);
+		}
+		else{
+			audio_play_sound(menuClick, 0, 0);
+		}
+		xPrev = 0;
+	}
+	xPrev++;
     global.SoundVolume = (x-774)/371
 	if x < 780{
 	global.SoundVolume = 0;	

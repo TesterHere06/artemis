@@ -4,6 +4,7 @@ if !global.IsGamepad {
 		image_index = 2
 	}
 	if mouse_check_button_released(mb_left) && position_meeting(mouse_x, mouse_y, id) && pressed = 1{
+		audio_play_sound(menuClick, 0, 0);
 		room_goto(rMenu);
 	}
 } else {
@@ -21,6 +22,7 @@ if !global.IsGamepad {
 			image_index = 2
 		}
 		if input_check_released("accept") {
+			audio_play_sound(menuClick, 0, 0);
 			room_goto(rMenu);
 		}
 	} else image_index = 0;

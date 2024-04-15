@@ -1,4 +1,5 @@
 function CastSpell(){
+	audio_play_sound(cardUse, 0, 0);
 	if SpellID == 0 or SpellID > global.SpellListLength {
 		show_debug_message("What")
 	}
@@ -11,6 +12,7 @@ function CastSpell(){
 		global.WeaponChanged = 1200;
 	}
 	if SpellID == 3 {
+		audio_play_sound(snd_explosion, 0, 0);
 		instance_create_depth(global.cursor_x, global.cursor_y, -2500, obj_fireball)
 	}
 	if SpellID == 4 {

@@ -656,6 +656,7 @@
     {"id":{"name":"RetroFunk_level","path":"sounds/RetroFunk_level/RetroFunk_level.yy",},},
     {"id":{"name":"shotgunShoot","path":"sounds/shotgunShoot/shotgunShoot.yy",},},
     {"id":{"name":"snd_empty","path":"sounds/snd_empty/snd_empty.yy",},},
+    {"id":{"name":"snd_explosion","path":"sounds/snd_explosion/snd_explosion.yy",},},
     {"id":{"name":"sbg","path":"sprites/sbg/sbg.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
     {"id":{"name":"sExit","path":"sprites/sExit/sExit.yy",},},

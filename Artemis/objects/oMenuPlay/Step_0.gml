@@ -6,6 +6,8 @@ if !global.IsGamepad {
 	if mouse_check_button_released(mb_left) && position_meeting(mouse_x, mouse_y, id) && pressed = 1{
 		global.cursor_x = mouse_x;
 		global.cursor_y = mouse_y;
+		audio_stop_sound(funnyBit_MainMenu);
+		audio_play_sound(menuClick, 0, 0);
 		room_goto_next();
 	}
 } else {
@@ -25,6 +27,7 @@ if !global.IsGamepad {
 		if input_check_released("accept") {
 			global.cursor_x = mouse_x;
 			global.cursor_y = mouse_y;
+			audio_play_sound(menuClick, 0, 0);
 			audio_stop_sound(funnyBit_MainMenu);
 			room_goto(Room1);
 		}

@@ -569,6 +569,7 @@
     {"name":"RetroFunk_level","order":6,"path":"sounds/RetroFunk_level/RetroFunk_level.yy",},
     {"name":"shotgunShoot","order":3,"path":"sounds/shotgunShoot/shotgunShoot.yy",},
     {"name":"snd_empty","order":12,"path":"sounds/snd_empty/snd_empty.yy",},
+    {"name":"snd_explosion","order":14,"path":"sounds/snd_explosion/snd_explosion.yy",},
     {"name":"sbg","order":10,"path":"sprites/sbg/sbg.yy",},
     {"name":"scribble_fallback_bulletpoint","order":11,"path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},
     {"name":"sExit","order":2,"path":"sprites/sExit/sExit.yy",},
