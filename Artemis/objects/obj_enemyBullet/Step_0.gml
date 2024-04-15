@@ -24,13 +24,22 @@ switch (state){
 }
 
 // Clean up
-if hitConfirm == true && playerDestroy == true {destroy = true;}
+//Out of bounds
+var _pad = 15;
+if bbox_right < _pad || bbox_left > room_width || bbox_bottom < 0 || bbox_top > room_height{
+	destroy == true;	
+}
 
+//Player hit 
+if place_meeting(x, y, obj_collision) && playerDestroy == true {destroy = true;}
+
+//Actually destroy
 if destroy == true {
 	instance_destroy();
 	create_animated_vfx(spr_poof, x, y, -y, 0)
 }
 
+//Wall collision
 if place_meeting(x, y, obj_collision) {
 	destroy = true;
 }
