@@ -1,33 +1,61 @@
-var _wallCollisions = false
-var _getDamage = true;
-var _enemyCollisions = true;
-
 //State machine
 switch(state){
 	// Spawn in from grave
 	case -1:
-		//Enterance animation
-		if enterAnim == false{
-			
-		}
-		
-		//Walking out
-		_wallCollisions = false;
-		_getDamage = false;
+
+		image_alpha += 0.01
 		if image_alpha >= 1{
-			//set the right speed and direction
-			spd = emergeSpd;
-			dir = 270;
-		}
-		//Switch to chasing state
-		if !place_meeting(x, y, obj_collision){
-			state = 0;	
+			state = 0
 		}
 		
 	break
 	
 	
 	case 0:
+		// Chase the player
+		if instance_exists(obj_enemyParent){
+			dir = (dir*4 + point_direction(x,y, instance_nearest(x, y, obj_enemyParent).x, instance_nearest(x, y, obj_enemyParent).y) + swirl) / 5
+		}
+		
+		if healthstuff < 60 {
+			swirl = choose(-45,45)
+			state = 1
+		}
+		
+		//Set the correct speed
+		if place_meeting(x, y, obj_enemyParent) {
+			spd = 0
+		} else spd = chaseSpd;
+		
+		if distance_to_object(obj_enemyParent) > 300 state = 3
+		
+	break;
+
+	case 1:
+
+		// Chase the player
+		if instance_exists(obj_player){
+			dir = (dir*4 + point_direction(x,y, obj_player.x, obj_player.y) + swirl) /5
+		}
+		
+		//Set the correct speed
+		spd = chaseSpd;
+		
+		if healthstuff > 140 {
+			swirl = choose(-30,30)
+			state = 0
+		}
+		
+	break;
+	
+	case 2:
+		healthstuff --
+		image_alpha = 1 + healthstuff*0.01
+		if healthstuff < -1 instance_destroy()
+	break;
+	
+	case 3:
+		
 		// Chase the player
 		if instance_exists(obj_player){
 			dir = point_direction(x,y, obj_player.x, obj_player.y)
@@ -36,11 +64,25 @@ switch(state){
 		//Set the correct speed
 		spd = chaseSpd;
 		
+		if distance_to_object(obj_player) < 20 {
+			swirl = choose(-30,30)
+			state = 0
+		}
+		
 	break;
 	
 }
 
+if distance_to_object(obj_player) < 20 {
+	healthstuff += 1;
+}
+if healthstuff > 160 {
+	healthstuff = 160;
+}
 
+if place_meeting(x, y, obj_enemyParent) or place_meeting(x, y, obj_enemyBullet) {
+	healthstuff --
+}
 
 
 //getting the speeds
@@ -55,23 +97,6 @@ else{
 	face = 2;
 }
 
-//Collisions
-if _wallCollisions == true{
-	if place_meeting(x + xspd, y, obj_collision){
-		xspd = 0;
-	}
-	if place_meeting(x,y +yspd, obj_collision){
-		yspd = 0;	
-	}
-}
-if _enemyCollisions == true{
-	if place_meeting(x + xspd, y, obj_enemyParent){
-		xspd = 0;
-	}
-	if place_meeting(x,y +yspd, obj_enemyParent){
-		yspd = 0;	
-	}
-}
 
 //moving	
 x += xspd;
@@ -80,8 +105,11 @@ y += yspd
 //Set the depth
 depth = -y;
 
+
+if healthstuff < 1 and state != 0{
+	state = 2
+}
 // Inherit the parent event
 // Getting damaged and dying
-if _getDamage == true{
-	event_inherited();
-}
+
+show_debug_message(string(healthstuff) + " " + string(state))

@@ -20,10 +20,13 @@ function CastSpell(){
 		instance_create_depth(obj_player.x, obj_player.y, -3, obj_poof)
 		instance_create_depth(obj_player.x, obj_player.y, -3, obj_poof)
 	}
-		if SpellID == 5 {
+	if SpellID == 5 {
 		instance_create_depth(global.cursor_x, global.cursor_y, 0, obj_helpingarea)
 	}
-		if SpellID == 6 {
+	if SpellID == 6 {
 		instance_create_depth(global.cursor_x, global.cursor_y, 0, obj_damagingarea)
+	}
+	if SpellID == 7 {
+		instance_create_depth(global.cursor_x, global.cursor_y, 0, obj_friend)
 	}
 }
