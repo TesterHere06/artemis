@@ -16,3 +16,8 @@ face = 1;
 
 // State machine
 state = 1;
+
+shootTimer = 0;
+windupTime = 60;
+recoverTime = 45;
+bulletInst = noone;

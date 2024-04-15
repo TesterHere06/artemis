@@ -23,6 +23,27 @@ switch(state){
 		
 		//Stop animatting / manually set the image index
 		image_index = 0;
+		
+		//Shoot a bullet
+		shootTimer++;
+		
+		if shootTimer == 1{
+			bulletInst = instance_create_depth(x, y, depth, obj_enemyBullet)
+		}
+		//Shoot the bullet after the windup
+		if shootTimer == windupTime && instance_exists(bulletInst){
+			//Set the bullet state to 1 (shooting)
+			bulletInst.state = 1;	
+		}
+		
+		//Recover and return to chasing theplayer
+		if shootTimer > windupTime + recoverTime{
+			// Go back to chasing the player
+			state = 0;
+			
+			//Reset the timer back to 0
+			shootTimer = 0;
+		}
 	
 	break;
 	

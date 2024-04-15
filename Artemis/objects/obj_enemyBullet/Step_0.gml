@@ -7,7 +7,6 @@ switch (state){
 		}
 		// set the depth to make the player more visible
 		depth = -y - 50;
-		state = 1;
 	break;
 	// SHoot / travel
 	case 1:
@@ -26,7 +25,11 @@ switch (state){
 // Clean up
 //Out of bounds
 var _pad = 15;
+<<<<<<< Updated upstream
 if bbox_right < _pad || bbox_left > room_width || bbox_bottom < 0 || bbox_top > room_height{
+=======
+if bbox_right < _pad || bbox_left > room_width + _pad || bbox_bottom < -_pad || bbox_top > room_height + _pad{
+>>>>>>> Stashed changes
 	destroy = true;	
 }
 
