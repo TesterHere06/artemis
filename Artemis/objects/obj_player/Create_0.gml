@@ -22,7 +22,7 @@ centerY = y + centerYoffset;
 shootTimer = 0;
 
 //Weapon choice
-weapon = global.WeaponList.revovler;
+weapon = global.WeaponList.revolver;
 
 x = 1162
 y = 600

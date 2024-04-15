@@ -112,4 +112,4 @@ if place_meeting(x, y + vspeed, obj_collision) {
 
 if global.WeaponChanged > 0 {
 	global.WeaponChanged --
-} else weapon = global.WeaponList.revovler;
+} else weapon = global.WeaponList.revolver;

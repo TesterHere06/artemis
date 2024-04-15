@@ -16,9 +16,9 @@ if (state == paused) {
 }
 
 draw_set_color(c_grey)
-draw_rectangle(10, surface_get_height(application_surface), 10+obj_player.maxhp*10, surface_get_height(application_surface)-40, false)
+draw_rectangle(10, surface_get_height(application_surface), 10+obj_player.maxhp*20, surface_get_height(application_surface)-40, false)
 draw_set_color(#89132a)
-draw_rectangle(10, surface_get_height(application_surface), 10+obj_player.hp*10, surface_get_height(application_surface)-40, false)
+draw_rectangle(10, surface_get_height(application_surface), 10+obj_player.hp*20, surface_get_height(application_surface)-40, false)
 
 if !global.IsGamepad {
 	global.cursor_x = mouse_x;
