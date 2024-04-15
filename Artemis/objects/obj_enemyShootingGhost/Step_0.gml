@@ -86,7 +86,8 @@ switch(state){
 		//Shoot the bullet after the windup
 		if shootTimer == windupTime && instance_exists(bulletInst){
 			//Set the bullet state to 1 (shooting)
-			bulletInst.state = 1;	
+			bulletInst.state = 1;
+			audio_play_sound(ghostShoot, 0, 0);
 		}
 		
 		//Recover and return to chasing theplayer
