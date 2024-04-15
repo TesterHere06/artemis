@@ -27,7 +27,22 @@ function get_damaged(_damageObject, _iframes = false)
 	//Special exit for ifram timer
 	if _iframes == true && iframesTimer > 0{
 		iframesTimer--;
+		
+		if iframesTimer mod 6 == 0{
+			if image_alpha == 1{
+				image_alpha = 0.5;
+			}
+			else{
+				image_alpha = 1;
+			}
+		}
+		
 		exit;
+	}
+	
+	//Make sure image flicking stops
+	if _iframes == true{
+		image_alpha =1;
 	}
 	
 	// recieve damage

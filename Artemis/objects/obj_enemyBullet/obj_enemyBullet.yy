@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_enemyBullet",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_enemyBullet",
   "overriddenProperties":[],
@@ -30,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_enemyBullet",
+    "path":"sprites/spr_enemyBullet/spr_enemyBullet.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

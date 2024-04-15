@@ -100,7 +100,6 @@
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},},
-    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},
     {"id":{"name":"obj_damagearea","path":"objects/obj_damagearea/obj_damagearea.yy",},},
     {"id":{"name":"obj_damageEnemy","path":"objects/obj_damageEnemy/obj_damageEnemy.yy",},},
