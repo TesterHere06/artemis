@@ -617,6 +617,7 @@
     {"id":{"name":"spr_healarea","path":"sprites/spr_healarea/spr_healarea.yy",},},
     {"id":{"name":"spr_healpoof","path":"sprites/spr_healpoof/spr_healpoof.yy",},},
     {"id":{"name":"spr_killCount","path":"sprites/spr_killCount/spr_killCount.yy",},},
+    {"id":{"name":"spr_difficulty","path":"sprites/spr_difficulty/spr_difficulty.yy",},},
     {"id":{"name":"spr_pl_death","path":"sprites/spr_pl_death/spr_pl_death.yy",},},
     {"id":{"name":"spr_pl_idle0","path":"sprites/spr_pl_idle0/spr_pl_idle0.yy",},},
     {"id":{"name":"spr_pl_idle1","path":"sprites/spr_pl_idle1/spr_pl_idle1.yy",},},

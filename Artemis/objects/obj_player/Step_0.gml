@@ -2,7 +2,13 @@ if global.BookOpen < 0.6 {
 	global.CurrentCombo = "";
 	if input_check("right") or input_check("left") or input_check("down") or input_check("up"){
 		SpeedUp += 0.2
-	} else SpeedUp -= 0.2
+		sprite_index = spr_pl_walk;
+	} else {
+		SpeedUp -= 0.2
+		if image_index = image_number{
+			sprite_index = choose(spr_pl_idle0,spr_pl_idle0,spr_pl_idle0,spr_pl_idle0,spr_pl_idle1,spr_pl_idle2)
+		}
+	}
 	SpeedUp = clamp(SpeedUp, 0, 1);
 if !global.IsGamepad {
 	var hor = (input_check("right") - input_check("left"));
