@@ -11,7 +11,7 @@ if global.BookWantsOpen and global.BookOpen < 1 {
 }
 CameraPositon()
 x += 1600;
-y += 1248 - global.BookOpen * 120;
+y += 1288 - global.BookOpen * 120;
 
 var isspell = false
 if string_length(global.CurrentCombo) > 0 {

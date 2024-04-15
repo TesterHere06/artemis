@@ -1,6 +1,9 @@
 global.BookOpen = 0;
 global.BookWantsOpen = false;
 
+image_xscale = 2
+image_yscale = 2
+
 window_set_fullscreen(true);
 
 for (i = 0; i < 4; i++) {
