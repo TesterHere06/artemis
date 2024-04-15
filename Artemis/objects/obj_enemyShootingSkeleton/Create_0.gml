@@ -3,6 +3,8 @@ event_inherited();
 image_yscale = 2;
 image_xscale = 2;
 
+hp=20;
+
 hitVFX = false;
 spd = 0;
 chaseSpd = .4;
