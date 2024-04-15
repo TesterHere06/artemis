@@ -15,4 +15,4 @@ yspd = 0;
 face = 1;
 
 // State machine
-state = 0;
+state = 1;
