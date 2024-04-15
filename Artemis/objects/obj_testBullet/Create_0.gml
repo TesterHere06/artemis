@@ -8,7 +8,7 @@ spd = 10;
 xspd = 0;
 yspd = 0;
 
-dirFix = false;
+dirFix = true;
 
 // Clean Up
 maxDist = 1000;
