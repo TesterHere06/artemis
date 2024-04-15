@@ -1,7 +1,8 @@
-global.PlayerSpeed = 3;
+global.PlayerSpeed = 2;
 DiagonalSpeed = 1;
 SpeedUp = 0;
 global.BonusSpeed = 0;
+global.BuffSpeed = 0;
 global.MaxStamina = 100;
 global.Stamina = global.MaxStamina;
 global.IsGamepad = false

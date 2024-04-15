@@ -10,4 +10,12 @@ function CastSpell(){
 		obj_player.weapon = global.WeaponList.assaultrifle
 		global.WeaponChanged = 300;
 	}
+	if SpellID == 3 {
+		obj_player.weapon = global.WeaponList.assaultrifle
+		global.WeaponChanged = 300;
+	}
+	if SpellID == 4 {
+		global.BuffSpeed = 2
+		global.BuffDuration[0] = 600
+	}
 }

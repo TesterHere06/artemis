@@ -27,8 +27,8 @@ if global.IsGamepad {
 	DiagonalSpeed = min( 1, sqrt( hor*hor + ver*ver ) ) / sqrt( hor*hor + ver*ver );
 }
 
-hspeed = hor * (global.PlayerSpeed + global.BonusSpeed) * DiagonalSpeed * SpeedUp;
-vspeed = ver * (global.PlayerSpeed + global.BonusSpeed) * DiagonalSpeed * SpeedUp;
+hspeed = hor * (global.PlayerSpeed + global.BonusSpeed + global.BuffSpeed) * DiagonalSpeed * SpeedUp;
+vspeed = ver * (global.PlayerSpeed + global.BonusSpeed + global.BuffSpeed) * DiagonalSpeed * SpeedUp;
 if x < global.cursor_x {image_xscale = 2}
 else {image_xscale = -2};
 
@@ -118,3 +118,9 @@ if place_meeting(x, y + vspeed, obj_collision) {
 if global.WeaponChanged > 0 {
 	global.WeaponChanged --
 } else weapon = global.WeaponList.revolver;
+
+if global.BuffDuration[0] > 0 {
+	global.BuffDuration[0] --
+} else if global.BuffSpeed > 0 {
+	global.BuffSpeed -= 0.1
+}
