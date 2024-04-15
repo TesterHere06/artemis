@@ -38,6 +38,7 @@ if (state == dying) {
 
 if (state == playing) {
 	draw_set_font(Joystix)
+	draw_set_color(c_white);
 	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 60);
 	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 120);
 	draw_sprite_part(spr_bars, 5, 0, 0, 12+372*obj_player.hp/obj_player.maxhp, 60, 20, surface_get_height(application_surface) - 60);
