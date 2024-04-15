@@ -12,6 +12,8 @@ dir = 0;
 xspd = 0;
 yspd = 0;
 
+enterAnim = false;
+
 face = 1;
 
 Anim = 0
