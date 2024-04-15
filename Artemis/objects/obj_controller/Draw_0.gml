@@ -28,4 +28,4 @@ draw_set_valign(fa_top);
 draw_set_font(Joystix_small);
 
 //The current enemy kill count
-draw_text(_ecHudX + 60, _ecHudY + 55, string(global.DiffText));
+draw_text(_ecHudX + 50, _ecHudY + 55, string(global.DiffText));

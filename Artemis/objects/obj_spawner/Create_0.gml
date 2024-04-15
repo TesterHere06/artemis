@@ -7,5 +7,5 @@ image_yscale = 2;
 timer = 0;
 spawnTime = 6*60;
 
-diff = 0;
+diff = 25;
 global.DiffText = "";

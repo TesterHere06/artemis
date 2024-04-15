@@ -136,7 +136,6 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	}
 	//Reset the timer
 	timer =0
-	show_debug_log(diff);
 	
 }
 
