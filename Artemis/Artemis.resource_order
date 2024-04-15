@@ -502,6 +502,7 @@
     {"name":"__shd_scribble_bake_shadow","order":4,"path":"shaders/__shd_scribble_bake_shadow/__shd_scribble_bake_shadow.yy",},
     {"name":"scribble_fallback_bulletpoint","order":11,"path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},
     {"name":"spr_assaultRifle","order":20,"path":"sprites/spr_assaultRifle/spr_assaultRifle.yy",},
+    {"name":"spr_bars","order":30,"path":"sprites/spr_bars/spr_bars.yy",},
     {"name":"spr_book","order":5,"path":"sprites/spr_book/spr_book.yy",},
     {"name":"spr_bullet","order":2,"path":"sprites/spr_bullet/spr_bullet.yy",},
     {"name":"spr_collision","order":3,"path":"sprites/spr_collision/spr_collision.yy",},
@@ -527,7 +528,7 @@
     {"name":"spr_spwaner","order":14,"path":"sprites/spr_spwaner/spr_spwaner.yy",},
     {"name":"spr_testBullet","order":7,"path":"sprites/spr_testBullet/spr_testBullet.yy",},
     {"name":"spr_tilesReal","order":16,"path":"sprites/spr_tilesReal/spr_tilesReal.yy",},
-    {"name":"spr_bars","order":30,"path":"sprites/spr_bars/spr_bars.yy",},
+    {"name":"spr_haste","order":31,"path":"sprites/spr_haste/spr_haste.yy",},
     {"name":"normal_floor","order":1,"path":"tilesets/normal_floor/normal_floor.yy",},
   ],
 }
