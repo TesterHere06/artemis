@@ -79,10 +79,10 @@ yspd = lengthdir_y(spd, dir);
 
 //get correct face
 if dir > 90 && dir < 270{
-	face = -1;
+	face = -2;
 }
 else{
-	face = 1;
+	face = 2;
 }
 
 //Collisions
