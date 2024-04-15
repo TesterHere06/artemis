@@ -98,6 +98,7 @@
     {"name":"obj_testBullet","order":8,"path":"objects/obj_testBullet/obj_testBullet.yy",},
     {"name":"obj_VFX","order":8,"path":"objects/obj_VFX/obj_VFX.yy",},
     {"name":"obj_weaponParent","order":2,"path":"objects/obj_weaponParent/obj_weaponParent.yy",},
+    {"name":"obj_enemyBullet","order":20,"path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},
     {"name":"__input_axis_is_directional","order":9,"path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},
     {"name":"__input_binding_get_label","order":10,"path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},
     {"name":"__input_class_chord_definition","order":1,"path":"scripts/__input_class_chord_definition/__input_class_chord_definition.yy",},

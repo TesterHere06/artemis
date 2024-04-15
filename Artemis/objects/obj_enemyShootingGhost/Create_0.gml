@@ -5,7 +5,7 @@ event_inherited();
 image_yscale = 2;
 image_xscale = 2;
 
-
+hitVFX = false;
 spd = 0;
 chaseSpd = .5;
 dir = 0;
