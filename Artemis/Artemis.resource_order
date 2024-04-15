@@ -518,6 +518,7 @@
     {"name":"spr_damagearea","order":31,"path":"sprites/spr_damagearea/spr_damagearea.yy",},
     {"name":"spr_damagePlayer","order":12,"path":"sprites/spr_damagePlayer/spr_damagePlayer.yy",},
     {"name":"spr_death","order":15,"path":"sprites/spr_death/spr_death.yy",},
+    {"name":"spr_difficulty","order":46,"path":"sprites/spr_difficulty/spr_difficulty.yy",},
     {"name":"spr_enemy1","order":4,"path":"sprites/spr_enemy1/spr_enemy1.yy",},
     {"name":"spr_enemyBullet","order":20,"path":"sprites/spr_enemyBullet/spr_enemyBullet.yy",},
     {"name":"spr_enemyBullet2","order":35,"path":"sprites/spr_enemyBullet2/spr_enemyBullet2.yy",},
@@ -539,7 +540,6 @@
     {"name":"spr_healarea","order":29,"path":"sprites/spr_healarea/spr_healarea.yy",},
     {"name":"spr_healpoof","order":30,"path":"sprites/spr_healpoof/spr_healpoof.yy",},
     {"name":"spr_killCount","order":34,"path":"sprites/spr_killCount/spr_killCount.yy",},
-    {"name":"spr_difficulty","order":46,"path":"sprites/spr_difficulty/spr_difficulty.yy",},
     {"name":"spr_pl_death","order":39,"path":"sprites/spr_pl_death/spr_pl_death.yy",},
     {"name":"spr_pl_idle0","order":36,"path":"sprites/spr_pl_idle0/spr_pl_idle0.yy",},
     {"name":"spr_pl_idle1","order":37,"path":"sprites/spr_pl_idle1/spr_pl_idle1.yy",},
@@ -554,6 +554,7 @@
     {"name":"spr_spwaner","order":13,"path":"sprites/spr_spwaner/spr_spwaner.yy",},
     {"name":"spr_testBullet","order":7,"path":"sprites/spr_testBullet/spr_testBullet.yy",},
     {"name":"spr_tilesReal","order":14,"path":"sprites/spr_tilesReal/spr_tilesReal.yy",},
+    {"name":"spr_bookinhand","order":47,"path":"sprites/spr_bookinhand/spr_bookinhand.yy",},
     {"name":"normal_floor","order":1,"path":"tilesets/normal_floor/normal_floor.yy",},
   ],
 }
