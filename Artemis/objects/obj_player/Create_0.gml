@@ -1,11 +1,13 @@
 global.PlayerSpeed = 3;
-global.DiagonalSpeed = 1;
+DiagonalSpeed = 1;
+SpeedUp = 0;
 global.BonusSpeed = 0;
 global.MaxStamina = 100;
 global.Stamina = global.MaxStamina;
 global.IsGamepad = false
 global.WeaponChanged = 0;
 global.CurrentCombo = "";
+global.SoulCounter = 0;
 image_xscale = 2
 image_yscale = 2
 

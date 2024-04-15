@@ -1,12 +1,17 @@
 if global.BookOpen < 0.6 {
 	global.CurrentCombo = "";
+	if input_check("right") or input_check("left") or input_check("down") or input_check("up"){
+		SpeedUp += 0.2
+	} else SpeedUp -= 0.2
+	SpeedUp = clamp(SpeedUp, 0, 1);
+	show_debug_message(string(SpeedUp))
 if !global.IsGamepad {
 	var hor = (input_check("right") - input_check("left"));
 	var ver = (input_check("down") - input_check("up"));
 	if (hor != 0 and ver !=0) {
-		global.DiagonalSpeed = 0.707;
+		DiagonalSpeed = 0.707;
 	} else {
-		global.DiagonalSpeed = 1;
+		DiagonalSpeed = 1;
 	}
 }
 
@@ -20,11 +25,11 @@ if hp <= 0{
 if global.IsGamepad {
 	var hor = gamepad_axis_value(0, gp_axislh);
 	var ver = gamepad_axis_value(0, gp_axislv);
-	global.DiagonalSpeed = min( 1, sqrt( hor*hor + ver*ver ) ) / sqrt( hor*hor + ver*ver );
+	DiagonalSpeed = min( 1, sqrt( hor*hor + ver*ver ) ) / sqrt( hor*hor + ver*ver );
 }
 
-hspeed = hor * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;
-vspeed = ver * (global.PlayerSpeed + global.BonusSpeed) * global.DiagonalSpeed;
+hspeed = hor * (global.PlayerSpeed + global.BonusSpeed) * DiagonalSpeed * SpeedUp;
+vspeed = ver * (global.PlayerSpeed + global.BonusSpeed) * DiagonalSpeed * SpeedUp;
 if x < global.cursor_x {image_xscale = 2}
 else {image_xscale = -2};
 
@@ -75,6 +80,23 @@ if input_check("shoot") && shootTimer <= 0 {
 	}
 }
 
+} else {
+	hspeed = hspeed / 2;
+	vspeed = vspeed / 2;
+	if input_check_pressed("spell_right") {
+		global.CurrentCombo += "D";
+	}
+	if input_check_pressed("spell_left") {
+		global.CurrentCombo += "A";
+	}
+	if input_check_pressed("spell_down") {
+		global.CurrentCombo += "S"
+	}
+	if input_check_pressed("spell_up") {
+		global.CurrentCombo += "W";
+	}
+}
+
 // Check for collision before updating the player's position
 if !place_meeting(x + hspeed, y, obj_collision) {
     x += hspeed;
@@ -93,22 +115,6 @@ if place_meeting(x, y + vspeed, obj_collision) {
     vspeed = 0;
 }
 
-} else {
-	hspeed = 0;
-	vspeed = 0;
-	if input_check_pressed("spell_right") {
-		global.CurrentCombo += "D";
-	}
-	if input_check_pressed("spell_left") {
-		global.CurrentCombo += "A";
-	}
-	if input_check_pressed("spell_down") {
-		global.CurrentCombo += "S"
-	}
-	if input_check_pressed("spell_up") {
-		global.CurrentCombo += "W";
-	}
-}
 
 if global.WeaponChanged > 0 {
 	global.WeaponChanged --
