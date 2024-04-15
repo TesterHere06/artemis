@@ -5,9 +5,6 @@ if global.BookOpen < 0.6 {
 		sprite_index = spr_pl_walk;
 	} else {
 		SpeedUp -= 0.2
-		if image_index = image_number-1{
-			sprite_index = choose(spr_pl_idle0,spr_pl_idle0,spr_pl_idle0,spr_pl_idle0,spr_pl_idle1,spr_pl_idle2)
-		}
 	}
 	SpeedUp = clamp(SpeedUp, 0, 1);
 if !global.IsGamepad {
@@ -120,8 +117,17 @@ if place_meeting(x, y + vspeed, obj_collision) {
     vspeed = 0;
 }
 
-if global.BonusSpeed >= 1 {
+if global.BonusSpeed >= 2 {
 	sprite_index = spr_pl_run;
+}
+
+if vspeed == 0 and hspeed == 0 {
+	if sprite_index == spr_pl_walk or sprite_index == spr_pl_run{
+		sprite_index = spr_pl_idle0
+	}
+	if image_index == image_number - 1{
+		sprite_index = choose(spr_pl_idle0,spr_pl_idle0,spr_pl_idle0,spr_pl_idle0,spr_pl_idle1,spr_pl_idle2)
+	}
 }
 
 if global.WeaponChanged > 0 {
