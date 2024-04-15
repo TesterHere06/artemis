@@ -97,6 +97,9 @@ if input_check("shoot") && shootTimer <= 0 {
 	if input_check_pressed("spell_up") {
 		global.CurrentCombo += "W";
 	}
+	centerY = y + centerYoffset;
+	aimDir = point_direction(x, centerY, global.cursor_x, global.cursor_y);
+	if shootTimer > 0 {shootTimer-- };
 }
 
 // Check for collision before updating the player's position
