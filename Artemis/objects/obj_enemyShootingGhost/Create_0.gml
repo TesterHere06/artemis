@@ -16,7 +16,7 @@ face = 1;
 state = 0;
 
 cooldownTime = 4*60;
-shootTimer = 0;
+shootTimer = irandom(cooldownTime);
 windupTime = 60;
 recoverTime = 45;
 bulletInst = noone;

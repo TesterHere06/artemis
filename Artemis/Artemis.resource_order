@@ -511,6 +511,7 @@
     {"name":"spr_enemyFollowingSkeleton","order":25,"path":"sprites/spr_enemyFollowingSkeleton/spr_enemyFollowingSkeleton.yy",},
     {"name":"spr_enemyShootyGhost","order":26,"path":"sprites/spr_enemyShootyGhost/spr_enemyShootyGhost.yy",},
     {"name":"spr_enemyShootySkeleton","order":27,"path":"sprites/spr_enemyShootySkeleton/spr_enemyShootySkeleton.yy",},
+    {"name":"spr_fireball","order":28,"path":"sprites/spr_fireball/spr_fireball.yy",},
     {"name":"spr_flashWeapon","order":19,"path":"sprites/spr_flashWeapon/spr_flashWeapon.yy",},
     {"name":"spr_guide","order":10,"path":"sprites/spr_guide/spr_guide.yy",},
     {"name":"spr_gun","order":9,"path":"sprites/spr_gun/spr_gun.yy",},
@@ -523,7 +524,7 @@
     {"name":"spr_testBullet","order":7,"path":"sprites/spr_testBullet/spr_testBullet.yy",},
     {"name":"spr_tiles","order":8,"path":"sprites/spr_tiles/spr_tiles.yy",},
     {"name":"spr_tilesReal","order":16,"path":"sprites/spr_tilesReal/spr_tilesReal.yy",},
-    {"name":"spr_fireball","order":28,"path":"sprites/spr_fireball/spr_fireball.yy",},
+    {"name":"spr_healthbar","order":29,"path":"sprites/spr_healthbar/spr_healthbar.yy",},
     {"name":"normal_floor","order":1,"path":"tilesets/normal_floor/normal_floor.yy",},
   ],
 }

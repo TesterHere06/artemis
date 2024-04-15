@@ -25,7 +25,7 @@ switch(state){
 			shootTimer = 0;
 		}
 		//Only add to timer if on screen
-		if bbox_right > _camLeft && bbox_left < _camRight && bbox_bottom > _camTop && bbox_top < camBottom {
+		if bbox_right > _camLeft && bbox_left < _camRight && bbox_bottom > _camTop && bbox_top < _camBottom {
 			shootTimer++;
 		}
 			
