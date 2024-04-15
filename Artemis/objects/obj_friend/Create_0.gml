@@ -23,7 +23,7 @@ emergeSpd = .25;
 spd = 0;
 chaseSpd = 1.5;
 
-healthstuff = 100
+healthstuff = 200
 
 // State machine
 state = -1;

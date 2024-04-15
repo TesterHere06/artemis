@@ -26,7 +26,7 @@ switch(state){
 			dir = (dir*4 + point_direction(x,y, instance_nearest(x, y, obj_enemyParent).x, instance_nearest(x, y, obj_enemyParent).y) + swirl) / 5
 		}
 		
-		if healthstuff < 60 {
+		if healthstuff < 120 {
 			swirl = choose(-45,45)
 			state = 1
 		}
@@ -50,7 +50,7 @@ switch(state){
 		//Set the correct speed
 		spd = chaseSpd;
 		
-		if healthstuff > 140 {
+		if healthstuff > 240 {
 			swirl = choose(-30,30)
 			state = 0
 		}
@@ -85,8 +85,8 @@ switch(state){
 if distance_to_object(obj_player) < 20 {
 	healthstuff += 1;
 }
-if healthstuff > 160 {
-	healthstuff = 160;
+if healthstuff > 320 {
+	healthstuff = 320;
 }
 
 if place_meeting(x, y, obj_damagePlayer) {
