@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shootyGhost",
-    "path":"sprites/spr_shootyGhost/spr_shootyGhost.yy",
+    "name":"spr_enemyShootyGhost",
+    "path":"sprites/spr_enemyShootyGhost/spr_enemyShootyGhost.yy",
   },
   "spriteMaskId":null,
   "visible":true,
