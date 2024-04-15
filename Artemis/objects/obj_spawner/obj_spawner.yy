@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_spawner3",
+  "%Name":"obj_spawner",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_spawner3",
+  "name":"obj_spawner",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
