@@ -9,6 +9,20 @@ switch(state){
 		//Set the correct speed
 		spd = chaseSpd;
 		
+		shootTimer++;
+		
+		
+		//Transition to shooting stage
+		if shootTimer > cooldownTime{
+			//Go to shooting state
+			state =1;
+			
+			//Reset timer so shooting state can use it too
+			shootTimer = 0;
+		}
+			
+			
+		
 	break;
 	
 	// Pause and shoot
@@ -28,7 +42,7 @@ switch(state){
 		shootTimer++;
 		
 		if shootTimer == 1{
-			bulletInst = instance_create_depth(x, y, depth, obj_enemyBullet)
+			bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, obj_enemyBullet)
 		}
 		//Shoot the bullet after the windup
 		if shootTimer == windupTime && instance_exists(bulletInst){
