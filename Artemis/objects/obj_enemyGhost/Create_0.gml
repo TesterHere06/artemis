@@ -11,6 +11,7 @@ dir = 0;
 xspd = 0;
 yspd = 0;
 swirl = random_range(-30,30)
+Anim = 0
 
 face = 1;
 

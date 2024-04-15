@@ -1,4 +1,6 @@
-draw_sprite_ext(sprite_index, image_index, x, y, face, image_yscale, image_angle, image_blend, image_alpha);
+draw_sprite_ext(sprite_index, image_index, x, y, face, image_yscale, image_angle + sin(Anim/28)*10, image_blend, image_alpha);
+Anim ++
+if Anim > 173.6 Anim = 0
 
 //draw hp
 var _healthPercent = hp / maxHp;

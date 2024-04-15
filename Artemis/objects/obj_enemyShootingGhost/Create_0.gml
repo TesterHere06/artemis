@@ -16,6 +16,7 @@ enterAnim = false;
 fadeSpd = 1/15;
 emergeSpd = .25;
 
+Anim = 0
 
 // State machine
 state = 0;

@@ -14,6 +14,8 @@ yspd = 0;
 
 face = 1;
 
+Anim = 0
+
 // State machine
 state = 0;
 
