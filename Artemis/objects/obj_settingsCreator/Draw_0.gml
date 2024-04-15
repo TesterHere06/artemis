@@ -1,0 +1,1 @@
+draw_sprite(spr_optionsScreen, 0, room_width/2, 776);

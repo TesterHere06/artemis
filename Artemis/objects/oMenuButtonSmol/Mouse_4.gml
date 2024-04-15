@@ -11,7 +11,7 @@ if (selectable)
 		}
 		case "SETTINGS":
 		{
-			room_goto(rSettings);
+			room_goto(rMenu);
 			break;	
 		}
 		case "EXIT":
@@ -21,7 +21,7 @@ if (selectable)
 		}
 		case "BACK":
 		{
-			room_goto(rMenu);	
+			room_goto(rSettings);	
 			break;
 		}
 		case "RESET POINTS":

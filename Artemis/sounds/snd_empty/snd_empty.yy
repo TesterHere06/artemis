@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":2.324898,
   "name":"snd_empty",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_empty",
+  "soundFile":"snd_empty.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.0,
 }
