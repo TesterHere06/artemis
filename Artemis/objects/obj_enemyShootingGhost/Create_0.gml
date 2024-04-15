@@ -12,6 +12,10 @@ yspd = 0;
 
 face = 1;
 
+fadeSpd = 1/15;
+emergeSpd = .25;
+
+
 // State machine
 state = 0;
 

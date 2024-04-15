@@ -8,8 +8,8 @@ function spawn_enemies(){
         // Determine spawn position based on the selected spawner
         switch (spawner_id) {
             case 1:
-                spawn_x = obj_spawner1.x + random_range(1, 120);
-                spawn_y = obj_spawner1.y + random_range(1, 120);
+                spawn_x = obj_spawner.x + random_range(1, 120);
+                spawn_y = obj_spawner.y + random_range(1, 120);
                 break;
             case 2:
                 spawn_x = obj_spawner2.x + random_range(1, 120);
@@ -33,8 +33,8 @@ function spawn_enemies(){
 		
 		// Adjust spawn position until no collision occurs
         while (collision) {
-            spawn_x += sign(obj_spawner1.x - spawn_x) * 15; // Move away from spawner
-            spawn_y += sign(obj_spawner1.y - spawn_y) * 15; // Move away from spawner
+            spawn_x += sign(obj_spawner.x - spawn_x) * 15; // Move away from spawner
+            spawn_y += sign(obj_spawner.y - spawn_y) * 15; // Move away from spawner
             
             // Perform collision check for adjusted position
             collision = false;

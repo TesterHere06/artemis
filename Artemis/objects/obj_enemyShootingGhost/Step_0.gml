@@ -1,5 +1,19 @@
+var _collisions
+
 //State machine
 switch(state){
+	// Spawn in from grave
+	case -1:
+		//Fade in animation
+		if image_alpha < 1{
+			image_alpha += fadeSpd
+		}
+		
+		//Walking out
+		
+	break
+	
+	
 	case 0:
 		// Chase the player
 		if instance_exists(obj_player){

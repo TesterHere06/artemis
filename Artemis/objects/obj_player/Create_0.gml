@@ -29,3 +29,4 @@ shootTimer = 0;
 weapon = global.WeaponList.revolver;
 
 instance_create_depth(0,0,0, obj_menu)
+
