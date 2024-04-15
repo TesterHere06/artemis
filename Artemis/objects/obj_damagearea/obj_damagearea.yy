@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"onj_damagearea",
+  "%Name":"obj_damagearea",
   "eventList":[],
   "managed":true,
-  "name":"onj_damagearea",
+  "name":"obj_damagearea",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
