@@ -43,26 +43,32 @@ if global.CurrentCombo == global.Combo[SpellID] and Cooldown < 1 {
 	Animation[0] = clamp(Animation[0], 0, 1)
 } else Animation[0] = clamp(Animation[0], 0, 0.5)
 
-if input_check_pressed("shoot") and global.Combo[SpellID] == global.CurrentCombo and Cooldown < 1 {
-	image_blend = c_gray;
-	
-	global.CurrentCombo = "";
-	
-	CastSpell()
-	
-	Cooldown = global.Cooldown[SpellID];
-	Animation[1] = 30;
-	Animation[3] = Animation[0];
-	
-	var pickedspellid = false
-	PrevSpellID = SpellID
-	do {
-		SpellID = irandom_range(1,global.SpellListLength);
-		pickedspellid = true;
-		for (var i = 0; i < 4; i++) {
-			if SpellNumber!= i and SpellID == global.Spell[i].SpellID {
-				pickedspellid = false;
-			} else if PrevSpellID == SpellID pickedspellid = false;
-		}
-	} until pickedspellid;
+if input_check_pressed("shoot") and global.Combo[SpellID] == global.CurrentCombo and Cooldown < 1{
+	if global.SoulCounter >= global.Cost[SpellID] {
+		global.SoulCounter -= global.Cost[SpellID]
+		image_blend = c_gray;
+		
+		global.CurrentCombo = "";
+		
+		CastSpell()
+		
+		Cooldown = global.Cooldown[SpellID];
+		Animation[1] = 30;
+		Animation[3] = Animation[0];
+		
+		var pickedspellid = false
+		PrevSpellID = SpellID
+		do {
+			SpellID = irandom_range(1,global.SpellListLength);
+			pickedspellid = true;
+			for (var i = 0; i < 4; i++) {
+				if SpellNumber!= i and SpellID == global.Spell[i].SpellID {
+					pickedspellid = false;
+				} else if PrevSpellID == SpellID pickedspellid = false;
+			}
+		} until pickedspellid;
+	} else {
+		global.CurrentCombo = "";
+	}
 }
+show_debug_message(string(SpellID))
