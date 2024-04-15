@@ -1,4 +1,6 @@
 if hp <= 0{
+	audio_play_sound(player_dead,);
+	audio_stop_sound(bossTime_level)
 	sprite_index = spr_pl_death;
 	if image_index >= 3 image_speed = 0
 } else {
@@ -55,6 +57,7 @@ if input_check("shoot") && shootTimer <= 0 {
 	var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
 	var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
 	
+	var _sound = weapon.sound;
 	var _spread = weapon.spread;
 	var _hose = weapon.hose
 	var _spreadDiv = _spread / max(weapon.bulletNum-1, 1);
@@ -64,11 +67,13 @@ if input_check("shoot") && shootTimer <= 0 {
 	
 	//Create weapon flash
 	create_animated_vfx(spr_flashWeapon, _weaponTipX, _weaponTipY, depth-10, aimDir);
+	audio_play_sound(_sound, 0, 0);
 	
 	// Create the correct number of bullets
 	for (var i = 0; i < weapon.bulletNum; i++){
 		
 		var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, weapon.bulletObj)
+		
 	
 		//change bullet direction
 		with(_bulletInst){
@@ -142,6 +147,6 @@ if x < global.cursor_x {image_xscale = 2}
 else {image_xscale = -2};
 
 //get damaged
-get_damaged(obj_damagePlayer, true);
+get_damaged(obj_damagePlayer, true, playerHurt);
 depth = -y;
 }

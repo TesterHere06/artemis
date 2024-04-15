@@ -619,6 +619,7 @@
     {"id":{"name":"gunShoot","path":"sounds/gunShoot/gunShoot.yy",},},
     {"id":{"name":"menuClick","path":"sounds/menuClick/menuClick.yy",},},
     {"id":{"name":"pickupCoin","path":"sounds/pickupCoin/pickupCoin.yy",},},
+    {"id":{"name":"player_dead","path":"sounds/player_dead/player_dead.yy",},},
     {"id":{"name":"playerHurt","path":"sounds/playerHurt/playerHurt.yy",},},
     {"id":{"name":"RetroFunk_level","path":"sounds/RetroFunk_level/RetroFunk_level.yy",},},
     {"id":{"name":"shotgunShoot","path":"sounds/shotgunShoot/shotgunShoot.yy",},},
