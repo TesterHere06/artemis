@@ -1,8 +1,13 @@
 if state = playing {
 	CameraPositon()
+	if obj_player.hp <= 0 {
+		surface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
+		surface_copy(surface, 0, 0, application_surface);
+		state = dying;
+	}
 }
 
-if input_check_pressed("pause") {
+if input_check_pressed("pause") and state != dying {
 	if state == playing {
 		instance_deactivate_all(true);
 		surface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));

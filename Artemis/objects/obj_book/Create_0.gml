@@ -3,6 +3,7 @@ global.BookWantsOpen = false;
 
 image_xscale = 3
 image_yscale = 3
+depth = -4500
 
 window_set_fullscreen(true);
 

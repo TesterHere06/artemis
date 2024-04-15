@@ -1,4 +1,4 @@
-if input_check_pressed("book"){
+if input_check_pressed("book") and obj_player.hp > 0{
 	global.BookWantsOpen = !global.BookWantsOpen
 }
 

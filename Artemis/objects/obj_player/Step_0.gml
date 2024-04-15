@@ -1,3 +1,7 @@
+if hp <= 0{
+	sprite_index = spr_pl_death;
+	if image_index >= 3 image_speed = 0
+} else {
 if global.BookOpen < 0.6 {
 	global.CurrentCombo = "";
 	if input_check("right") or input_check("left") or input_check("down") or input_check("up"){
@@ -139,7 +143,5 @@ else {image_xscale = -2};
 
 //get damaged
 get_damaged(obj_damagePlayer, true);
-
-if hp <= 0{
-	room_restart();
+depth = -y;
 }

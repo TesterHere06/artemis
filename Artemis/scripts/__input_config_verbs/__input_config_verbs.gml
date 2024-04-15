@@ -26,7 +26,7 @@ function __input_config_verbs()
             spell_right: [input_binding_key(vk_right), input_binding_key("D")],
 			
             accept:  input_binding_key(vk_space),
-            cancel:  input_binding_key(vk_backspace),
+            cancel:  [input_binding_key(vk_backspace), input_binding_key("R")],
             action:  input_binding_key(vk_enter),
             special: input_binding_key(vk_shift),
 			

@@ -3,6 +3,7 @@ window_set_cursor(cr_none);
 
 playing = 0;
 paused = 1;
+dying = 2;
 
 around = 0;
 manual = 1;

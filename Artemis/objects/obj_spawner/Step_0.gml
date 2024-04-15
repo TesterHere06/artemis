@@ -34,14 +34,6 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 				with(_inst){
 					state = -1;
 				}
-				var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingGhost);
-				with(_inst){
-					state = -1;
-				}
-				var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingGhost);
-				with(_inst){
-					state = -1;
-				}
 			}
 			if _enemy = "skeleton"{
 				var _inst = instance_create_depth(x, y, depth-100, obj_enemySkeleton);
@@ -53,7 +45,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 		else{
 			var _inst = instance_create_depth(x, y, depth-100, obj_enemyGhost);
 			with(_inst){
-			state = -1;
+				state = -1;
 			}
 		}
 		diff++;

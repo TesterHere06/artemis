@@ -16,7 +16,27 @@ if (state == paused) {
 		"Game is Paused");
 }
 
-if (state != paused) {
+if (state == dying) {
+	if obj_player.sprite_index == spr_pl_death and obj_player.image_index >= 3 {
+		draw_set_color(c_black);
+		draw_set_alpha(1.0);
+		
+		draw_surface(surface, 0, 0);
+		
+		draw_set_alpha(0.3);
+		draw_rectangle(0, 0, surface_get_width(application_surface), surface_get_height(application_surface), false);
+		
+		draw_set_alpha(1.0);
+		if !global.IsGamepad {
+			draw_sprite(sTryAgain, 0, surface_get_width(application_surface)/2, surface_get_height(application_surface)/2)
+		} else draw_sprite(sTryAgain, 1, surface_get_width(application_surface)/2, surface_get_height(application_surface)/2)
+		if input_check_released("cancel") {
+			room_restart()
+		}
+	}
+}
+
+if (state == playing) {
 	draw_set_font(Joystix)
 	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 60);
 	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 120);

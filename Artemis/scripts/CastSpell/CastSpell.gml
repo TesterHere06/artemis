@@ -11,7 +11,7 @@ function CastSpell(){
 		global.WeaponChanged = 1200;
 	}
 	if SpellID == 3 {
-		instance_create_depth(global.cursor_x, global.cursor_y, -3, obj_fireball)
+		instance_create_depth(global.cursor_x, global.cursor_y, -2500, obj_fireball)
 	}
 	if SpellID == 4 {
 		global.BuffSpeed = 2
@@ -21,10 +21,10 @@ function CastSpell(){
 		instance_create_depth(obj_player.x, obj_player.y, -3, obj_poof)
 	}
 	if SpellID == 5 {
-		instance_create_depth(global.cursor_x, global.cursor_y, 0, obj_helpingarea)
+		instance_create_depth(global.cursor_x, global.cursor_y, -50, obj_helpingarea)
 	}
 	if SpellID == 6 {
-		instance_create_depth(global.cursor_x, global.cursor_y, 0, obj_damagingarea)
+		instance_create_depth(global.cursor_x, global.cursor_y, -50, obj_damagingarea)
 	}
 	if SpellID == 7 {
 		instance_create_depth(global.cursor_x, global.cursor_y, 0, obj_friend)
