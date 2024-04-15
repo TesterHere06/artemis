@@ -602,6 +602,7 @@
     {"id":{"name":"spr_testBullet","path":"sprites/spr_testBullet/spr_testBullet.yy",},},
     {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},},
     {"id":{"name":"spr_tilesReal","path":"sprites/spr_tilesReal/spr_tilesReal.yy",},},
+    {"id":{"name":"spr_fireball","path":"sprites/spr_fireball/spr_fireball.yy",},},
     {"id":{"name":"Base","path":"tilesets/Base/Base.yy",},},
     {"id":{"name":"normal_floor","path":"tilesets/normal_floor/normal_floor.yy",},},
   ],
