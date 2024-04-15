@@ -16,13 +16,16 @@ if (state == paused) {
 }
 
 if (state != paused) {
-	draw_set_color(c_grey)
-	draw_rectangle(20, surface_get_height(application_surface), 20+obj_player.maxhp*25, surface_get_height(application_surface)-40, false)
-	draw_set_color(#89132a)
-	draw_rectangle(20, surface_get_height(application_surface), 20+obj_player.hp*25, surface_get_height(application_surface)-40, false)
-	draw_set_color(c_white)
+	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 60);
+	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 120);
+	draw_sprite_part(spr_bars, 5, 0, 0, 396*obj_player.hp/obj_player.maxhp, 60, 20, surface_get_height(application_surface) - 60);
+	draw_sprite_part(spr_bars, 2, 0, 0, 396*global.SoulCounter/8, 60, 20, surface_get_height(application_surface) - 120);
+	draw_sprite(spr_bars, 4, 20, surface_get_height(application_surface) - 60);
+	draw_sprite(spr_bars, 1, 20, surface_get_height(application_surface) - 120);
 	draw_set_font(Joystix)
-	draw_text(40, surface_get_height(application_surface) - 100, string(global.SoulCounter))
+	if global.SoulCounter > 8 {
+		draw_text(410, surface_get_height(application_surface) - 120, "X" + string(floor(global.SoulCounter/8)))
+	}
 }
 
 if !global.IsGamepad {
