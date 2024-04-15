@@ -44,6 +44,13 @@ switch(state){
 		if shootTimer == 1{
 			bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, obj_enemyBullet)
 		}
+		
+		//Keep the bullet in the zombie's hands
+		if shootTimer <= windupTime && instance_exists(bulletInst){
+			bulletInst.x = x + bulletXoff*face;
+			bulletInst.y = y + bulletYoff;
+		}
+		
 		//Shoot the bullet after the windup
 		if shootTimer == windupTime && instance_exists(bulletInst){
 			//Set the bullet state to 1 (shooting)
