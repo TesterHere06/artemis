@@ -24,7 +24,7 @@
 			// change the font color to highlight it
 			if(LLHighscoresTopRankList()[i] == LLPlayerRank())
 			{
-				draw_set_colour($FF1EACFF & $ffffff);
+				draw_set_colour($FF1EACFF & $9e0000);
 				var l7C35EBB1_0=($FF1EACFF >> 24);
 				draw_set_alpha(l7C35EBB1_0 / $ff);
 			}

@@ -18,6 +18,7 @@ if (state == paused) {
 
 if (state == dying) {
 	if obj_player.sprite_index == spr_pl_death and obj_player.image_index >= 3 {
+		LootLockerSetPlayerName(global.playerName);
 		
 		
 		
@@ -71,7 +72,7 @@ if (state == dying) {
 			// change the font color to highlight it
 			if(LLHighscoresCenteredRankList()[i] == LLPlayerRank())
 			{
-				draw_set_colour($FF1EACFF & $ffffff);
+				draw_set_colour($FF1EACFF & $9e0000);
 				var l26033C26_0=($FF1EACFF >> 24);
 				draw_set_alpha(l26033C26_0 / $ff);
 			}
