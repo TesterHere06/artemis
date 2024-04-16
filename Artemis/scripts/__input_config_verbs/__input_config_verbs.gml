@@ -50,10 +50,10 @@ function __input_config_verbs()
             action:  input_binding_gamepad_button(gp_face3),
             special: input_binding_gamepad_button(gp_shoulderlb),
             
-			spell_up:  input_binding_gamepad_button(gp_face4),
-            spell_right:  input_binding_gamepad_button(gp_face2),
-            spell_left:  input_binding_gamepad_button(gp_face3),
-            spell_down: input_binding_gamepad_button(gp_face1),
+			spell_up:  [input_binding_gamepad_button(gp_face4), input_binding_gamepad_button(gp_padu)],
+            spell_right:  [input_binding_gamepad_button(gp_face2), input_binding_gamepad_button(gp_padr)],
+            spell_left:  [input_binding_gamepad_button(gp_face3), input_binding_gamepad_button(gp_padl)],
+            spell_down: [input_binding_gamepad_button(gp_face1), input_binding_gamepad_button(gp_padd)],
 			
             aim_up:    input_binding_gamepad_axis(gp_axisrv, true),
             aim_down:  input_binding_gamepad_axis(gp_axisrv, false),

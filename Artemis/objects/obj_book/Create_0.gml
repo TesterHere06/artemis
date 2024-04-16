@@ -13,6 +13,7 @@ for (i = 0; i < 4; i++) {
 }
 
 instance_create_depth(0,0,-5,obj_guide)
+instance_create_depth(0,0,-5,o_ctrlReminder)
 
 global.SpellListLength = 7
 global.Cooldown[0] = 120
