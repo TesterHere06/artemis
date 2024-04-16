@@ -1,6 +1,8 @@
 gamepad_set_axis_deadzone(0, 0.3);
 window_set_cursor(cr_none);
 
+text = "";
+
 playing = 0;
 paused = 1;
 dying = 2;

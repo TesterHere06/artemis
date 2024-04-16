@@ -1,6 +1,6 @@
 // If the score was updated
 // we restart the animation
-if(!(previousScore == global.playerScore))
+/*if(!(previousScore == global.playerScore))
 {
 	// Animate the score with an animationCurve
 	global.gotScore = false;
