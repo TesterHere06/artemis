@@ -14,7 +14,7 @@ global.SoundVolume = global.user_data.SFX;
 
 save_json(global.user_data, "user_data.json");
 
-LootLockerInitialize("prod_59b831a2327844eca6ce18fd598ccd46", "1.0.0", "false", "21542");
+LootLockerInitialize("prod_df9fa2054fb8430aa38933ac0d615d20", "1.0.0", "false", "21544");
 LootLockerSetPlayerName(global.user_data.NAME);
 audio_group_set_gain(SFXGROUP, global.SoundVolume, 0);
 audio_group_set_gain(MUSICGROUP, global.MusicVolume, 0);

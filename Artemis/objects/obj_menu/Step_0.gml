@@ -1,7 +1,7 @@
 if state = playing {
 	CameraPositon()
 	if obj_player.hp <= 0 {
-		LootLockerSubmitScore("21536", global.enemyKillCount);
+		LootLockerSubmitScore("21544", global.enemyKillCount);
 		surface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 		surface_copy(surface, 0, 0, application_surface);
 		state = dying;
