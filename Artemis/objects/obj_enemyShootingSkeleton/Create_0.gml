@@ -11,6 +11,7 @@ chaseSpd = .4;
 dir = 0;
 xspd = 0;
 yspd = 0;
+strafe = 90;
 
 enterAnim = true;
 
@@ -23,8 +24,9 @@ state = -1;
 
 cooldownTime = 3;
 shootTimer = irandom(cooldownTime);
-windupTime = 3;
-recoverTime = 5;
+windupTime = 4;
+recoverTime = 6;
+bulletamount = 16;
 bulletInst = noone;
 bulletXoff = 15;
 bulletYoff = -30;

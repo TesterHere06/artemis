@@ -9,6 +9,7 @@ chaseSpd = .5;
 dir = 0;
 xspd = 0;
 yspd = 0;
+swirl = random_range(-10,10)
 
 face = 1;
 enterAnim = true;

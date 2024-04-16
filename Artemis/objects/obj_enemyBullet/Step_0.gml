@@ -3,7 +3,7 @@ switch (state){
 	case 0:
 		//Aim for the player
 		if instance_exists(obj_player){
-			dir = point_direction(x, y, obj_player.x, obj_player.centerY)
+			dir = point_direction(x, y, obj_player.x, obj_player.centerY) + random_range(-10,10)
 		}
 		// set the depth to make the player more visible
 		depth = -y - 50;

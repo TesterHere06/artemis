@@ -40,7 +40,7 @@ switch(state){
 		}
 		
 		//Set the correct speed
-		spd = chaseSpd;
+		spd = 0;
 		
 		shootTimer++;
 		
@@ -76,6 +76,7 @@ switch(state){
 		
 		if shootTimer == 1{
 			bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, obj_enemyBullet)
+			bulletamount --
 		}
 		
 		//Keep the bullet in the zombie's hands
@@ -98,7 +99,84 @@ switch(state){
 			//Reset the timer back to 0
 			shootTimer = 0;
 		}
+		
+		if bulletamount <=0 {
+			state = 2
+			strafe = choose(-90,90)
+		}
 	
+	break;
+	
+	case 2:
+		
+		if instance_exists(obj_player){
+			dir = point_direction(x,y, obj_player.x, obj_player.y) + strafe
+		}
+		
+		//Set the correct speed
+		spd = chaseSpd;
+		
+		shootTimer++;
+		if shootTimer == windupTime && instance_exists(bulletInst){
+			//Set the bullet state to 1 (shooting)
+			bulletInst.state = 1;	
+		}
+		
+		if shootTimer > windupTime + recoverTime{
+			shootTimer = 0;
+		}
+		
+		bulletamount ++
+		
+		if bulletamount >= 160 {
+			bulletamount = 16;
+			state = choose(1,3);
+		}
+		
+	break;
+	
+	case 3:
+		
+		if instance_exists(obj_player){
+			dir = point_direction(x,y, obj_player.x, obj_player.y) + random_range(-10,10)
+		}
+		
+		//Set the correct speed
+		spd = -chaseSpd/4;
+		
+		//Stop animatting / manually set the image index
+		image_index = 0;
+		
+		//Shoot a bullet
+		shootTimer++;
+		
+		if shootTimer == 1{
+			bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, obj_enemyBullet)
+			bulletamount --
+		}
+		
+		//Keep the bullet in the zombie's hands
+		if shootTimer <= windupTime && instance_exists(bulletInst){
+			bulletInst.x = x + bulletXoff*face;
+			bulletInst.y = y + bulletYoff;
+		}
+		
+		//Shoot the bullet after the windup
+		if shootTimer == windupTime && instance_exists(bulletInst){
+			//Set the bullet state to 1 (shooting)
+			bulletInst.state = 1;	
+		}
+		
+		//Recover and return to chasing theplayer
+		if shootTimer > windupTime + recoverTime + cooldownTime*2 {
+			shootTimer = 0;
+		}
+		
+		if bulletamount <=0 {
+			state = 2;
+			strafe = choose(-90,90)
+		}
+		
 	break;
 	
 }
