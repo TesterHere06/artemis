@@ -18,6 +18,9 @@ if (state == paused) {
 
 if (state == dying) {
 	if obj_player.sprite_index == spr_pl_death and obj_player.image_index >= 3 {
+		
+		
+		
 		draw_set_color(c_black);
 		draw_set_alpha(1.0);
 		
@@ -30,6 +33,70 @@ if (state == dying) {
 		if !global.IsGamepad {
 			draw_sprite(sTryAgain, 0, surface_get_width(application_surface)/2, surface_get_height(application_surface)/2)
 		} else draw_sprite(sTryAgain, 1, surface_get_width(application_surface)/2, surface_get_height(application_surface)/2)
+		
+		#region Leaderboard
+		//Draw highscore sprite
+		draw_sprite(spr_highScores, 0, surface_get_width(application_surface)/1.3, surface_get_height(application_surface)/2);
+
+		//Draw the text
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
+		draw_set_font(Joystix_small);
+		
+		for(i = 0; i < 13; i += 1) {
+		// Are there any scores to show?
+		if(!(LLHighscoresCenteredRankList()[i] == ""))
+		{
+			draw_set_font(Joystix_verySmall);
+			
+			text = LLHighscoresCenteredRankList()[i]+". ";
+		
+			// If the players have a name
+			// output that
+			if(!(LLHighscoresCenteredNamesList()[i] == ""))
+			{
+				text += LLHighscoresCenteredNamesList()[i];
+			}
+		
+			// Otherwise, output their ID instead
+			else
+			{
+				text += LLHighscoresCenteredIDList()[i];
+			}
+		
+			draw_set_halign(fa_left);
+			draw_set_valign(fa_top);
+		
+			// If the score is the players score
+			// change the font color to highlight it
+			if(LLHighscoresCenteredRankList()[i] == LLPlayerRank())
+			{
+				draw_set_colour($FF1EACFF & $ffffff);
+				var l26033C26_0=($FF1EACFF >> 24);
+				draw_set_alpha(l26033C26_0 / $ff);
+			}
+		
+			else
+			{
+				draw_set_colour($FFFFFFFF & $ffffff);
+				var l5ED1FB76_0=($FFFFFFFF >> 24);
+				draw_set_alpha(l5ED1FB76_0 / $ff);
+			}
+		
+			// The text variable here is formatted as:
+			// Rank+". "+PlayerName/PlayerID
+			// Example:
+			// 10. PlayerName
+			draw_text_transformed(1500, 350+(i*30), "" + string(text), 3, 3, 0);
+		
+			draw_set_halign(fa_right);
+			draw_set_valign(fa_top);
+		
+			// Draw the score on the right side
+			draw_text_transformed(1841, 350+(i*30), "" + string(LLHighscoresCenteredScoreList()[i]), 3, 3, 0);
+			}
+		}
+		
 		if input_check_released("cancel") {
 			room_restart()
 		}

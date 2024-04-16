@@ -1,4 +1,4 @@
-	for(i = 0; i < 10; i += 1) {
+	for(i = 0; i < 13; i += 1) {
 		// Are there any scores to show?
 		if(!(LLHighscoresTopRankList()[i] == ""))
 		{
@@ -40,12 +40,12 @@
 			// Rank+". "+PlayerName/PlayerID
 			// Example:
 			// 10. PlayerName
-			draw_text_transformed(850, 100+(i*60), "" + string(text), 3, 3, 0);
+			draw_text_transformed(1365, 444+(i*30), "" + string(text), 3, 3, 0);
 		
 			draw_set_halign(fa_right);
 			draw_set_valign(fa_top);
 		
 			// Draw the score on the right side
-			draw_text_transformed(1250, 100+(i*60), "" + string(LLHighscoresTopScoreList()[i]), 3, 3, 0);
+			draw_text_transformed(1706, 444+(i*30), "" + string(LLHighscoresTopScoreList()[i]), 3, 3, 0);
 		}
 	}
