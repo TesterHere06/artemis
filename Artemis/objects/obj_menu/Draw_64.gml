@@ -18,7 +18,6 @@ if (state == paused) {
 
 if (state == dying) {
 	if obj_player.sprite_index == spr_pl_death and obj_player.image_index >= 3 {
-		LootLockerSetPlayerName(global.playerName);
 		
 		
 		
