@@ -173,6 +173,7 @@
     {"name":"Obj_YoYo_Button_toRoom","order":1,"path":"objects/Obj_YoYo_Button_toRoom/Obj_YoYo_Button_toRoom.yy",},
     {"name":"Obj_YoYo_text","order":2,"path":"objects/Obj_YoYo_text/Obj_YoYo_text.yy",},
     {"name":"Obj_YoYo_textbox","order":3,"path":"objects/Obj_YoYo_textbox/Obj_YoYo_textbox.yy",},
+    {"name":"obj_control","order":12,"path":"objects/obj_control/obj_control.yy",},
     {"name":"oMenuButton","order":1,"path":"objects/oMenuButton/oMenuButton.yy",},
     {"name":"oMenuButtonSmol","order":2,"path":"objects/oMenuButtonSmol/oMenuButtonSmol.yy",},
     {"name":"oMenuExit","order":8,"path":"objects/oMenuExit/oMenuExit.yy",},
