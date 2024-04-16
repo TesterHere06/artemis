@@ -108,8 +108,8 @@ if (state == playing) {
 	draw_set_color(c_white);
 	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 60);
 	draw_sprite(spr_bars, 0, 20, surface_get_height(application_surface) - 120);
-	draw_sprite_part(spr_bars, 5, 0, 0, 12+372*obj_player.hp/obj_player.maxhp, 60, 20, surface_get_height(application_surface) - 60);
-	draw_sprite_part(spr_bars, 2, 0, 0, 12+372*global.SoulCounter/32, 60, 20, surface_get_height(application_surface) - 120);
+	draw_sprite_part(spr_bars, 60, 0, 0, 12+372*obj_player.hp/obj_player.maxhp, 60, 20, surface_get_height(application_surface) - 60);
+	draw_sprite_part(spr_bars, 60, 0, 0, 12+372*global.SoulCounter/32, 60, 20, surface_get_height(application_surface) - 120);
 	draw_text(410, surface_get_height(application_surface) - 120, "X" + string(global.SoulCounter))
 	draw_sprite(spr_bars, 4, 20, surface_get_height(application_surface) - 60);
 	draw_sprite(spr_bars, 1, 20, surface_get_height(application_surface) - 120);
