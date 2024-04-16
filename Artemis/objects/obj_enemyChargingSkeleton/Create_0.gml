@@ -17,6 +17,7 @@ face = 1;
 enterAnim = true;
 
 Anim = 0
+Anim2 = 0
 
 fadeSpd = 1/15;
 emergeSpd = .25;

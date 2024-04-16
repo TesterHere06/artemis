@@ -2,7 +2,7 @@ if input_check_pressed("book") and obj_player.hp > 0{
 	global.BookWantsOpen = !global.BookWantsOpen
 }
 
-if global.BookWantsOpen and global.BookOpen < 1 {
+if global.BookWantsOpen and global.BookOpen < 1.2 {
 	global.BookOpen += 0.1
 } else {
 	if !global.BookWantsOpen and global.BookOpen > 0 {

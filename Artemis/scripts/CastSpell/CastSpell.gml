@@ -5,11 +5,11 @@ function CastSpell(){
 	}
 	if SpellID == 1 {
 		obj_player.weapon = global.WeaponList.shotgun
-		global.WeaponChanged = 1800;
+		global.WeaponChanged = 2400;
 	}
 	if SpellID == 2 {
 		obj_player.weapon = global.WeaponList.assaultrifle
-		global.WeaponChanged = 1200;
+		global.WeaponChanged = 1800;
 	}
 	if SpellID == 3 {
 		audio_play_sound(snd_explosion, 0, 0);

@@ -56,6 +56,7 @@ switch(state){
 		
 		spd = chaseSpd * 5;
 		_enemyCollisions = false;
+		Anim2 = (Anim2+20)/20
 		
 		if place_meeting(x + xspd, y, obj_collision){
 			spd = 0;
@@ -63,6 +64,7 @@ switch(state){
 			audio_play_sound(ammoWallhit, 1, false);
 			swirl = choose(-90,90)
 			_enemyCollisions = true;
+			Anim2 = 0;
 			state = 0;
 		}
 		if place_meeting(x,y +yspd, obj_collision){
@@ -71,6 +73,7 @@ switch(state){
 			audio_play_sound(ammoWallhit, 1, false);
 			swirl = choose(-90,90)
 			_enemyCollisions = true;
+			Anim2 = 0;
 			state = 0;
 		}
 	break;

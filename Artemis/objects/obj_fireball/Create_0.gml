@@ -1,6 +1,6 @@
 event_inherited();
 
-damage = 10;
+damage = 15;
 hitVFX = false;
 
 image_xscale = 6;
