@@ -28,7 +28,7 @@ function __input_config_verbs()
             accept:  input_binding_key(vk_space),
             cancel:  [input_binding_key(vk_backspace), input_binding_key("R")],
             action:  input_binding_key(vk_enter),
-            special: input_binding_key(vk_shift), input_binding_key("Q"),
+            special: [input_binding_key(vk_shift), input_binding_key("Q")],
 			
 			book: input_binding_key(vk_control),
             
@@ -61,7 +61,7 @@ function __input_config_verbs()
             aim_right: input_binding_gamepad_axis(gp_axisrh, false),
             shoot:     [input_binding_gamepad_button(gp_shoulderrb)],
 			
-			book: input_binding_gamepad_button(gp_shoulderl,gp_shoulderr),
+			book: [input_binding_gamepad_button(gp_shoulderl), input_binding_gamepad_button(gp_shoulderr)],
             
 			gpcursor: input_binding_gamepad_button(gp_stickr),
 			
