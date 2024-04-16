@@ -1,13 +1,13 @@
 //spawn an enemy
 timer++
 depth = -y;
-if diff <= 30{
+if diff <= 5{
 	global.DiffText = "Easy"
 }
-else if diff <= 60{
+else if diff <= 15{
 	global.DiffText = "Medium"
 }
-else if diff <= 100{
+else if diff <= 35{
 	global.DiffText = "Hard"
 }
 else{

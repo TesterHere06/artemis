@@ -7,5 +7,5 @@ depth = -y;
 timer = 0;
 spawnTime = 6*60;
 
-diff = 25;
+diff = 0;
 global.DiffText = "";
