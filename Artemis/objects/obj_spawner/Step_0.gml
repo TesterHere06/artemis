@@ -28,7 +28,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 		var _enemyType = choose("medium", "common")
 		
 		if _enemyType = "medium"{
-			var _enemy = choose("ghost", "skeleton")
+			var _enemy = choose("ghost", "skeleton", "skeleton")
 			if _enemy = "ghost"{
 				var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingGhost);
 				with(_inst){
@@ -57,7 +57,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 		var _enemyType = choose("medium", "medium", "medium", "hard", "common")
 		
 		if _enemyType = "medium"{
-			var _enemy = choose("ghost", "skeleton")
+			var _enemy = choose("ghost", "skeleton", "skeleton")
 			if _enemy = "ghost"{
 				var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingGhost);
 				with(_inst){
