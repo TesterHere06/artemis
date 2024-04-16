@@ -1,4 +1,6 @@
 if hp <= 0{
+	hspeed = hspeed/2;
+	vspeed = vspeed/2;
 	audio_stop_sound(bossTime_level)
 	sprite_index = spr_pl_death;
 	if image_index >= 3 image_speed = 0
