@@ -4,6 +4,7 @@ image_yscale = 2;
 image_xscale = 2;
 
 hp=20;
+maxHp = 20;
 
 hitVFX = false;
 spd = 0;

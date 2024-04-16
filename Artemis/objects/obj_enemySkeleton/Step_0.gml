@@ -12,6 +12,9 @@ switch(state){
 		}
 		
 		//Walking out
+		_enemyCollisions = false;
+		
+		
 		_wallCollisions = false;
 		_getDamage = false;
 		if image_alpha >= 1{
@@ -42,7 +45,32 @@ switch(state){
 		//Set the correct speed
 		spd = chaseSpd;
 			
+		tiredness += choose(1,2);
+		
+		if tiredness >= 1240 {
+			swirl = choose(-75,75);
+			tiredness = 0;
+			state = 1
+		}
+		
+	break;
+	
+	case 1:
+		_wallCollisions = true;
+		// Chase the player
+		if instance_exists(obj_player){
+			dir = point_direction(x,y, obj_player.x, obj_player.y) + swirl
+		}
+		
+		//Set the correct speed
+		spd = chaseSpd;
 			
+		tiredness += choose(1,2);
+		
+		if tiredness >= 560 {
+			tiredness = 0;
+			state = 0
+		}
 		
 	break;
 	
@@ -87,6 +115,10 @@ y += yspd
 
 //Set the depth
 depth = -y;
+
+if !place_meeting(x, y, obj_enemyParent) {
+	_enemyCollisions = true;
+}
 
 // Inherit the parent event
 // Getting damaged and dying

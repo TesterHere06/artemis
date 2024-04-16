@@ -13,6 +13,7 @@ if hitConfirm == true && enemyDestroy == true {destroy = true;}
 
 //Collision
 if place_meeting(x, y, obj_collision){
+	create_animated_vfx(spr_poof, x, y, depth)
 	destroy = true;
 }
 
@@ -23,7 +24,6 @@ if point_distance(xstart, ystart, x, y) > maxDist{
 
 //Destroy
 if destroy == true{
-	create_animated_vfx(spr_poof, x, y, depth)
 	audio_play_sound(ammoWallhit, 1, false);
 	instance_destroy();
 }

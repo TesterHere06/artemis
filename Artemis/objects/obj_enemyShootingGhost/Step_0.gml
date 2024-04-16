@@ -12,6 +12,7 @@ switch(state){
 		}
 		
 		//Walking out
+		_enemyCollisions = false;
 		_wallCollisions = false;
 		_getDamage = false;
 		if image_alpha >= 1{
@@ -142,6 +143,10 @@ y += yspd
 
 //Set the depth
 depth = -y;
+
+if !place_meeting(x, y, obj_enemyParent) {
+	_enemyCollisions = true;
+}
 
 // Inherit the parent event
 // Getting damaged and dying

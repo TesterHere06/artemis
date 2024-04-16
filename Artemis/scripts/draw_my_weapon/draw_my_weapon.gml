@@ -10,7 +10,7 @@ function draw_my_weapon(){
 		_weaponYsc1 = -1;
 	}
 	if global.BookOpen < 0.6 {
-		draw_sprite_ext(weapon.sprite, 0, x + _xOffset, centerY + _yOffset, 1, _weaponYsc1, aimDir, c_white, image_alpha);
+		draw_sprite_ext(weapon.sprite, 0, x + _xOffset, centerY + _yOffset, 1, _weaponYsc1, aimDir + shootTimer*2*_weaponYsc1, c_white, image_alpha);
 	} else draw_sprite_ext(spr_bookinhand, 0, x + _xOffset, centerY + _yOffset, 1, _weaponYsc1, 270 + _weaponYsc1*90, c_white, image_alpha);
 }
 

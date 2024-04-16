@@ -1,13 +1,13 @@
 //spawn an enemy
 timer++
 depth = -y;
-if diff <= 5{
+if diff <= 30{
 	global.DiffText = "Easy"
 }
-else if diff <= 15{
+else if diff <= 40{
 	global.DiffText = "Medium"
 }
-else if diff <= 35{
+else if diff <= 70{
 	global.DiffText = "Hard"
 }
 else{
@@ -51,7 +51,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 		diff++;
 	}
 	
-	else if diff <= 60{
+	else if diff <= 40{
 		global.activeEnemyMax = 20
 		spawnTime = 6*60;
 		var _enemyType = choose("medium", "medium", "medium", "hard", "common")
@@ -78,15 +78,25 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 			}
 		}
 		else{
-			var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingSkeleton);
-			with(_inst){
-			state = -1;
+			var _enemy = choose("charger", "skeleton")
+			if _enemy = "skeleton"{
+				var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingSkeleton);
+				with(_inst){
+					state = -1;
+				}
+			}
+			if _enemy = "charger"{
+				var _inst = instance_create_depth(x, y, depth-100, obj_enemyChargingSkeleton);
+				with(_inst){
+					state = -1;
+				}
 			}
 		}
 		diff++;
 	}
 		
-	else if diff <= 100{
+	else if diff <= 70{
+		global.activeEnemyMax = 30
 		var _enemyType = choose("medium", "hard", "hard", "hard", "common")
 		
 		if _enemyType = "medium"{
@@ -111,9 +121,18 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 			}
 		}
 		else{
-			var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingSkeleton);
-			with(_inst){
-			state = -1;
+			var _enemy = choose("charger", "skeleton")
+			if _enemy = "skeleton"{
+				var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingSkeleton);
+				with(_inst){
+					state = -1;
+				}
+			}
+			if _enemy = "charger"{
+				var _inst = instance_create_depth(x, y, depth-100, obj_enemyChargingSkeleton);
+				with(_inst){
+					state = -1;
+				}
 			}
 		}
 		diff++;
@@ -138,9 +157,18 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 			}
 		}
 		else{
-			var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingSkeleton);
-			with(_inst){
-			state = -1;
+			var _enemy = choose("charger", "skeleton")
+			if _enemy = "skeleton"{
+				var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingSkeleton);
+				with(_inst){
+					state = -1;
+				}
+			}
+			if _enemy = "charger"{
+				var _inst = instance_create_depth(x, y, depth-100, obj_enemyChargingSkeleton);
+				with(_inst){
+					state = -1;
+				}
 			}
 		}
 		diff++;

@@ -12,6 +12,7 @@ switch(state){
 		}
 		
 		//Walking out
+		_enemyCollisions = false;
 		_wallCollisions = false;
 		_getDamage = false;
 		if image_alpha >= 1{
@@ -26,7 +27,7 @@ switch(state){
 		}
 		//Switch to chasing state
 		if !place_meeting(x, y, obj_collision) and sprite_index == spr_enemyShootySkeleton{
-			state = 0;
+			state = 2;
 		}
 		
 	break
@@ -68,9 +69,6 @@ switch(state){
 		//Set the correct speed
 		spd = 0;
 		
-		//Stop animatting / manually set the image index
-		image_index = 0;
-		
 		//Shoot a bullet
 		shootTimer++;
 		
@@ -109,6 +107,7 @@ switch(state){
 	
 	case 2:
 		
+		image_speed = 0.5;
 		if instance_exists(obj_player){
 			dir = point_direction(x,y, obj_player.x, obj_player.y) + strafe
 		}
@@ -127,10 +126,10 @@ switch(state){
 		}
 		
 		bulletamount ++
-		
 		if bulletamount >= 160 {
-			bulletamount = 16;
-			state = choose(1,3);
+				bulletamount = 16;
+				image_speed = 1;
+				state = choose(1,3);
 		}
 		
 	break;
@@ -138,14 +137,11 @@ switch(state){
 	case 3:
 		
 		if instance_exists(obj_player){
-			dir = point_direction(x,y, obj_player.x, obj_player.y) + random_range(-10,10)
+			dir = point_direction(x,y, obj_player.x, obj_player.y) + choose(-60,60)
 		}
 		
 		//Set the correct speed
-		spd = -chaseSpd/4;
-		
-		//Stop animatting / manually set the image index
-		image_index = 0;
+		spd = chaseSpd/2;
 		
 		//Shoot a bullet
 		shootTimer++;
@@ -220,6 +216,10 @@ y += yspd
 
 //Set the depth
 depth = -y;
+
+if !place_meeting(x, y, obj_enemyParent) {
+	_enemyCollisions = true;
+}
 
 // Inherit the parent event
 // Getting damaged and dying

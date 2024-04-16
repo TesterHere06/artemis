@@ -12,7 +12,7 @@ if(enteringName == true)
 	var l7C8EB2D3_0=($FFFFFFFF >> 24);
 	draw_set_alpha(l7C8EB2D3_0 / $ff);
 
-	draw_text_transformed(1384, 950, "" + string(keyboard_string), 3, 3, 0);
+	draw_text_transformed(1384, 960, "" + string(keyboard_string), 3, 3, 0);
 }
 
 else
@@ -25,7 +25,7 @@ else
 		var l3462ACC8_0=($FF191919 >> 24);
 		draw_set_alpha(l3462ACC8_0 / $ff);
 	
-		draw_text_transformed(1384, 950, "" + string("Name..."), 3, 3, 0);
+		draw_text_transformed(1384, 960, "" + string("Name..."), 3, 3, 0);
 	}
 
 	// Otherwise, show the players name
@@ -35,6 +35,6 @@ else
 		var l210E5DC5_0=($FFFFFFFF >> 24);
 		draw_set_alpha(l210E5DC5_0 / $ff);
 	
-		draw_text_transformed(1384, 950, "" + string(LLPlayerName()), 3, 3, 0);
+		draw_text_transformed(1384, 960, "" + string(LLPlayerName()), 3, 3, 0);
 	}
 }
