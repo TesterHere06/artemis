@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"BasicLeaderboardObjects",
-    "path":"folders/LootLockerLeaderBoardsExamples/LootLockerExample_SimpleLeaderboard/BasicLeaderboardObjects.yy",
+    "path":"folders/Extensions/LootLockerLeaderboards/LootLockerLeaderBoardsExamples/LootLockerExample_SimpleLeaderboard/BasicLeaderboardObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

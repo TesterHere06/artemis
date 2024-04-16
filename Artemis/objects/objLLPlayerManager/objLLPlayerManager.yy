@@ -10,8 +10,8 @@
   "name":"objLLPlayerManager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Artemis",
-    "path":"Artemis.yyp",
+    "name":"GameLogicObjects",
+    "path":"folders/Extensions/LootLockerLeaderboards/LootLockerLeaderBoardsExamples/LootLockerExample_RockyRunner/RockyRunnerObjects/GameLogicObjects.yy",
   },
   "parentObjectId":null,
   "persistent":true,

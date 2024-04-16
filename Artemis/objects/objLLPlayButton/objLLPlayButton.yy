@@ -9,8 +9,8 @@
   "name":"objLLPlayButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"MenuObjects",
+    "path":"folders/Extensions/LootLockerLeaderboards/LootLockerLeaderBoardsExamples/LootLockerExample_RockyRunner/RockyRunnerObjects/MenuObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

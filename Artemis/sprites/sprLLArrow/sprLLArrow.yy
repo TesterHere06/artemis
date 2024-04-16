@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"BasicLeaderboardSprites",
-    "path":"folders/LootLockerLeaderBoardsExamples/LootLockerExample_SimpleLeaderboard/BasicLeaderboardSprites.yy",
+    "path":"folders/Extensions/LootLockerLeaderboards/LootLockerLeaderBoardsExamples/LootLockerExample_SimpleLeaderboard/BasicLeaderboardSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

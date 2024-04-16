@@ -30,7 +30,7 @@
   "name":"roomLLSimpleLeaderboardExample",
   "parent":{
     "name":"LootLockerExample_SimpleLeaderboard",
-    "path":"folders/LootLockerLeaderBoardsExamples/LootLockerExample_SimpleLeaderboard.yy",
+    "path":"folders/Extensions/LootLockerLeaderboards/LootLockerLeaderBoardsExamples/LootLockerExample_SimpleLeaderboard.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"ScenerySprites",
-    "path":"folders/LootLockerExample_RockyRunner/RockyRunnerSprites/ScenerySprites.yy",
+    "path":"folders/Extensions/LootLockerLeaderboards/LootLockerLeaderBoardsExamples/LootLockerExample_RockyRunner/RockyRunnerSprites/ScenerySprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

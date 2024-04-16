@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"GameplayObjects",
-    "path":"folders/RockyRunnerObjects/GameplayObjects.yy",
+    "path":"folders/Extensions/LootLockerLeaderboards/LootLockerLeaderBoardsExamples/LootLockerExample_RockyRunner/RockyRunnerObjects/GameplayObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

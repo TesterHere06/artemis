@@ -6,6 +6,8 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+    {"name":"inst_499643E1","path":"rooms/roomLLRockyRunnerExample/roomLLRockyRunnerExample.yy",},
+    {"name":"inst_1AE042AF","path":"rooms/roomLLRockyRunnerExample/roomLLRockyRunnerExample.yy",},
     {"name":"inst_2610A4B3","path":"rooms/roomLLRockyRunnerExample/roomLLRockyRunnerExample.yy",},
     {"name":"inst_3677D7D0","path":"rooms/roomLLRockyRunnerExample/roomLLRockyRunnerExample.yy",},
     {"name":"inst_100F9540","path":"rooms/roomLLRockyRunnerExample/roomLLRockyRunnerExample.yy",},
@@ -16,6 +18,8 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_100F9540","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_100F9540","objectId":{"name":"objLLPlayerManager","path":"objects/objLLPlayerManager/objLLPlayerManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":-32.0,},
+        {"$GMRInstance":"","%Name":"inst_499643E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_499643E1","objectId":{"name":"objLLGameController","path":"objects/objLLGameController/objLLGameController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-32.0,},
+        {"$GMRInstance":"","%Name":"inst_1AE042AF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1AE042AF","objectId":{"name":"objLLGameUI","path":"objects/objLLGameUI/objLLGameUI.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":-32.0,},
         {"$GMRInstance":"","%Name":"inst_2610A4B3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2610A4B3","objectId":{"name":"objLLPlayButton","path":"objects/objLLPlayButton/objLLPlayButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":146.0,},
         {"$GMRInstance":"","%Name":"inst_3677D7D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3677D7D0","objectId":{"name":"objLLPlayerName","path":"objects/objLLPlayerName/objLLPlayerName.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":107.0,},
         {"$GMRInstance":"","%Name":"inst_3B5EDB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B5EDB","objectId":{"name":"objLLPlayer","path":"objects/objLLPlayer/objLLPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":123.0,},
@@ -27,8 +31,8 @@
   ],
   "name":"roomLLRockyRunnerExample",
   "parent":{
-    "name":"Artemis",
-    "path":"Artemis.yyp",
+    "name":"LootLockerExample_RockyRunner",
+    "path":"folders/Extensions/LootLockerLeaderboards/LootLockerLeaderBoardsExamples/LootLockerExample_RockyRunner.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -3,8 +3,8 @@
   "%Name":"LootLockerLeaderboardsDocumentation",
   "name":"LootLockerLeaderboardsDocumentation",
   "parent":{
-    "name":"Artemis",
-    "path":"Artemis.yyp",
+    "name":"LootLockerLeaderboards",
+    "path":"folders/Extensions/LootLockerLeaderboards.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

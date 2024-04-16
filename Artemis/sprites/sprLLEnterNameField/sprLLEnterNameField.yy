@@ -27,7 +27,7 @@
   "origin":0,
   "parent":{
     "name":"MenuSprites",
-    "path":"folders/LootLockerExample_RockyRunner/RockyRunnerSprites/MenuSprites.yy",
+    "path":"folders/Extensions/LootLockerLeaderboards/LootLockerLeaderBoardsExamples/LootLockerExample_RockyRunner/RockyRunnerSprites/MenuSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
