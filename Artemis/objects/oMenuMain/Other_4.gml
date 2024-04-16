@@ -1,0 +1,1 @@
+save_json(global.user_data, "user_data.json")

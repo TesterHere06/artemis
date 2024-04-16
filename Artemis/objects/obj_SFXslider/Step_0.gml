@@ -23,6 +23,7 @@ if(Grab){
 	global.SoundVolume = 0;	
 	}
 	audio_group_set_gain(SFXGROUP, global.SoundVolume, 0);
+	global.user_data.update_value("SFX", global.SoundVolume);
 }
 } else {
 		if input_check_pressed("up") {
@@ -46,6 +47,7 @@ if GamepadSelected == 1 {
 	global.SoundVolume = 0;	
 	}
 	audio_group_set_gain(SFXGROUP, global.SoundVolume, 0)
+	global.user_data.update_value("SFX", global.SoundVolume);
 }
 }
 show_debug_message(string(x) + " " + string(mouse_x))

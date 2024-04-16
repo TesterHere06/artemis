@@ -12,6 +12,7 @@ if(Grab){
 	global.MusicVolume = 0;	
 	}
     audio_group_set_gain(MUSICGROUP, global.MusicVolume, 0);
+	global.user_data.update_value("MUS", global.MusicVolume);
 }
 } else {
 	if input_check_pressed("up") {
@@ -35,5 +36,6 @@ if GamepadSelected == 0 {
 	global.MusicVolume = 0;	
 	}
     audio_group_set_gain(MUSICGROUP, global.MusicVolume, 0);
+	global.user_data.update_value("MUS", global.MusicVolume);
 }
 }

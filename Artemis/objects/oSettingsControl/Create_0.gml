@@ -1,7 +1,5 @@
 audio_group_load(SFXGROUP);
 audio_group_load(MUSICGROUP);
-global.MusicVolume = 0.5;
-global.SoundVolume = 0.3;
 
 global.user_data = new user_data_struct();
 
@@ -11,11 +9,13 @@ if (file_exists("user_data.json"))
 
     global.user_data.load_values(user_data);
 }
+global.MusicVolume = global.user_data.MUS;
+global.SoundVolume = global.user_data.SFX;
 
 save_json(global.user_data, "user_data.json");
 
-LootLockerInitialize("dev_462171d5c7d6486abb878d8623863925", "1.0.0", "true", "21536");
-LootLockerSetPlayerName("");
+LootLockerInitialize("prod_59b831a2327844eca6ce18fd598ccd46", "1.0.0", "false", "21542");
+LootLockerSetPlayerName(global.user_data.NAME);
 audio_group_set_gain(SFXGROUP, global.SoundVolume, 0);
 audio_group_set_gain(MUSICGROUP, global.MusicVolume, 0);
 room_goto(rMenu);

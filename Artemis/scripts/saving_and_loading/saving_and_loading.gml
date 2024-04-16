@@ -30,8 +30,8 @@ function user_data_struct() constructor {
 
     // SET DEFAULT VALUES FOR VARIABLES THAT YOU WISH TO SAVE - MAKE THESE WHATEVER YOU WANT
 
-    MUS = 0.1;
-	SFX = 0.1;
+    MUS = 0.3;
+	SFX = 0.4;
 	NAME = "";
 
     // LOAD VALUES
