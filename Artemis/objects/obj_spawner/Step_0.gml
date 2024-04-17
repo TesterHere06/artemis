@@ -52,7 +52,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	}
 	
 	else if diff <= 40{
-		global.activeEnemyMax = 20
+		global.activeEnemyMax = 30
 		spawnTime = 6*60;
 		var _enemyType = choose("medium", "medium", "medium", "hard", "common")
 		
@@ -100,7 +100,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	}
 		
 	else if diff <= 70{
-		global.activeEnemyMax = 30
+		global.activeEnemyMax = 50
 		var _enemyType = choose("medium", "hard", "hard", "hard", "common")
 		
 		if _enemyType = "medium"{
@@ -151,12 +151,16 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	}
 	
 	else{
-		var _enemyType = choose("hard", "hard", "hard", "hard", "medium")
+		var _enemyType = choose("hard", "hard", "hard", "medium", "medium", "common")
 		
 		if _enemyType = "medium"{
 			var _enemy = choose("ghost", "skeleton")
 			if _enemy = "ghost"{
 				var _inst = instance_create_depth(x, y, depth-100, obj_enemyShootingGhost);
+				with(_inst){
+					state = -1;
+				}
+				var _inst = instance_create_depth(x, y-20, depth-100, obj_enemyShootingGhost);
 				with(_inst){
 					state = -1;
 				}
@@ -166,6 +170,24 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 				with(_inst){
 					state = -1;
 				}
+				var _inst = instance_create_depth(x, y-20, depth-100, obj_enemySkeleton);
+				with(_inst){
+					state = -1;
+				}
+			}
+		}
+		else if _enemyType = "common"{
+			var _inst = instance_create_depth(x, y, depth-100, obj_enemyGhost);
+			with(_inst){
+			state = -1;
+			}
+			var _inst = instance_create_depth(x, y-20, depth-100, obj_enemyGhost);
+			with(_inst){
+			state = -1;
+			}
+			var _inst = instance_create_depth(x, y-40, depth-100, obj_enemyGhost);
+			with(_inst){
+			state = -1;
 			}
 		}
 		else{
