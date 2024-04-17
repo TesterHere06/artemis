@@ -67,7 +67,7 @@ switch(state){
 			
 		tiredness += choose(1,2);
 		
-		if tiredness >= 560 {
+		if tiredness >= 120 {
 			tiredness = 0;
 			state = 0
 		}
@@ -78,11 +78,6 @@ switch(state){
 
 
 
-
-//getting the speeds
-xspd = lengthdir_x(spd, dir);
-yspd = lengthdir_y(spd, dir);
-
 //get correct face
 if dir > 90 && dir < 270{
 	face = -2;
@@ -90,6 +85,13 @@ if dir > 90 && dir < 270{
 else{
 	face = 2;
 }
+
+if state = 0 {
+	mp_potential_step_object(obj_player.x, obj_player.y, spd, obj_collision)
+} else {
+//getting the speeds
+xspd = lengthdir_x(spd, dir);
+yspd = lengthdir_y(spd, dir);
 
 //Collisions
 if _wallCollisions == true{
@@ -112,6 +114,7 @@ if _enemyCollisions == true{
 //moving	
 x += xspd;
 y += yspd
+}
 
 //Set the depth
 depth = -y;
