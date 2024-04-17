@@ -1,6 +1,6 @@
 var _wallCollisions = false
 var _getDamage = true;
-var _enemyCollisions = true;
+var _enemyCollisions = false;
 
 //State machine
 switch(state){
@@ -100,7 +100,7 @@ switch(state){
 		
 		if bulletamount <=0 {
 			state = 2
-			strafe = choose(-90,90)
+			strafe = choose(-60,60)
 		}
 	
 	break;
@@ -129,48 +129,7 @@ switch(state){
 		if bulletamount >= 160 {
 				bulletamount = 16;
 				image_speed = 1;
-				state = choose(1,3);
-		}
-		
-	break;
-	
-	case 3:
-		
-		if instance_exists(obj_player){
-			dir = point_direction(x,y, obj_player.x, obj_player.y) + choose(-60,60)
-		}
-		
-		//Set the correct speed
-		spd = chaseSpd/2;
-		
-		//Shoot a bullet
-		shootTimer++;
-		
-		if shootTimer == 1{
-			bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, obj_enemyBullet)
-			bulletamount --
-		}
-		
-		//Keep the bullet in the zombie's hands
-		if shootTimer <= windupTime && instance_exists(bulletInst){
-			bulletInst.x = x + bulletXoff*face;
-			bulletInst.y = y + bulletYoff;
-		}
-		
-		//Shoot the bullet after the windup
-		if shootTimer == windupTime && instance_exists(bulletInst){
-			//Set the bullet state to 1 (shooting)
-			bulletInst.state = 1;	
-		}
-		
-		//Recover and return to chasing theplayer
-		if shootTimer > windupTime + recoverTime + cooldownTime*2 {
-			shootTimer = 0;
-		}
-		
-		if bulletamount <=0 {
-			state = 2;
-			strafe = choose(-90,90)
+				state = 1;
 		}
 		
 	break;

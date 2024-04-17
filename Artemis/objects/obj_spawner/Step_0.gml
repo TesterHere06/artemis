@@ -76,6 +76,10 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 			with(_inst){
 			state = -1;
 			}
+			var _inst = instance_create_depth(x, y-20, depth-100, obj_enemyGhost);
+			with(_inst){
+			state = -1;
+			}
 		}
 		else{
 			var _enemy = choose("charger", "skeleton")
@@ -116,6 +120,14 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 		}
 		else if _enemyType = "common"{
 			var _inst = instance_create_depth(x, y, depth-100, obj_enemyGhost);
+			with(_inst){
+			state = -1;
+			}
+			var _inst = instance_create_depth(x, y-20, depth-100, obj_enemyGhost);
+			with(_inst){
+			state = -1;
+			}
+			var _inst = instance_create_depth(x, y-40, depth-100, obj_enemyGhost);
 			with(_inst){
 			state = -1;
 			}

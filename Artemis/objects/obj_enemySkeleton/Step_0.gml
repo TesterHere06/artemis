@@ -1,6 +1,6 @@
 var _wallCollisions = false
 var _getDamage = true;
-var _enemyCollisions = true;
+var _enemyCollisions = false;
 
 //State machine
 switch(state){
