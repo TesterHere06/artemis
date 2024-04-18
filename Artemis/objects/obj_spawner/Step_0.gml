@@ -11,7 +11,7 @@ else if diff <= 70{
 	global.DiffText = "Hard"
 }
 else{
-	global.DiffText = "Very Hard"
+	global.DiffText = "Hard+"
 }
 
 //reset timer when enemy limits have been reached
@@ -52,7 +52,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	}
 	
 	else if diff <= 40{
-		global.activeEnemyMax = 30
+		global.activeEnemyMax = 25
 		spawnTime = 7*60;
 		var _enemyType = choose("medium", "medium", "medium", "hard", "common")
 		
@@ -100,9 +100,9 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	}
 		
 	else if diff <= 70{
-		global.activeEnemyMax = 50
+		global.activeEnemyMax = 40
 		spawnTime = 8*60;
-		var _enemyType = choose("medium", "hard", "hard", "hard", "common")
+		var _enemyType = choose("medium", "medium", "hard", "common")
 		
 		if _enemyType = "medium"{
 			var _enemy = choose("ghost", "skeleton")
@@ -152,7 +152,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	}
 	
 	else{
-		var _enemyType = choose("hard", "hard", "hard", "medium", "medium", "common")
+		var _enemyType = choose("hard", "hard", "medium", "medium", "common")
 		
 		if _enemyType = "medium"{
 			var _enemy = choose("ghost", "skeleton")
