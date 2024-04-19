@@ -99,7 +99,6 @@
   "ResourceOrderSettings":[
     {"name":"anmCrvLLGetScoreCurve","order":1,"path":"animcurves/anmCrvLLGetScoreCurve/anmCrvLLGetScoreCurve.yy",},
     {"name":"anmCrvLLJumpCurve","order":2,"path":"animcurves/anmCrvLLJumpCurve/anmCrvLLJumpCurve.yy",},
-    {"name":"FirebaseSetup","order":22,"path":"extensions/FirebaseSetup/FirebaseSetup.yy",},
     {"name":"LootLockerLeaderboards","order":3,"path":"extensions/LootLockerLeaderboards/LootLockerLeaderboards.yy",},
     {"name":"Font_YoYo_20","order":1,"path":"fonts/Font_YoYo_20/Font_YoYo_20.yy",},
     {"name":"Font_YoYo_30","order":2,"path":"fonts/Font_YoYo_30/Font_YoYo_30.yy",},
