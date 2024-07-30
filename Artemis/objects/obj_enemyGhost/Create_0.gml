@@ -13,6 +13,8 @@ yspd = 0;
 swirl = random_range(-30,30)
 Anim = 0
 global.GhostAmount ++
+hp = 5
+maxHp = 5
 
 face = 1;
 

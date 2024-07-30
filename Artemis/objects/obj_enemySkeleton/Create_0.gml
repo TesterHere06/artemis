@@ -23,8 +23,8 @@ fadeSpd = 1/15;
 emergeSpd = .25;
 spd = 0;
 chaseSpd = 1;
-hp = 15;
-maxHp = 15;
+hp = 12;
+maxHp = 12;
 
 // State machine
 state = -1;

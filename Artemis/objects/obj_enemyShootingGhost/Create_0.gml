@@ -10,6 +10,8 @@ dir = 0;
 xspd = 0;
 yspd = 0;
 swirl = random_range(-25,25)
+hp = 8
+maxHp = 8
 
 face = 1;
 enterAnim = true;
