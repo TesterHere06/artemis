@@ -12,6 +12,7 @@ xspd = 0;
 yspd = 0;
 swirl = random_range(-30,30)
 Anim = 0
+global.GhostAmount ++
 
 face = 1;
 
@@ -20,7 +21,7 @@ enterAnim = true;
 fadeSpd = 1/15;
 emergeSpd = .25;
 spd = 0;
-chaseSpd = .5;
+chaseSpd = random_range(.5,.6);
 
 // State machine
 state = -1;

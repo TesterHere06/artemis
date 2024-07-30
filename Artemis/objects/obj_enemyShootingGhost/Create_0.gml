@@ -5,11 +5,11 @@ image_xscale = 2;
 
 hitVFX = false;
 spd = 0;
-chaseSpd = .5;
+chaseSpd = .6;
 dir = 0;
 xspd = 0;
 yspd = 0;
-swirl = random_range(-10,10)
+swirl = random_range(-25,25)
 
 face = 1;
 enterAnim = true;

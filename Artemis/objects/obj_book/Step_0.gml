@@ -22,5 +22,7 @@ if string_length(global.CurrentCombo) > 0 {
 	}
 	if isspell == false {
 		global.CurrentCombo = "";
+		var spell = instance_create_depth(obj_player.x, obj_player.y, -3000, obj_poofspell)
+		spell.image_index = 4
 	}
 }

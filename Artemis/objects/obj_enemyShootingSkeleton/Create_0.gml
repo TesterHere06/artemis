@@ -3,8 +3,8 @@ event_inherited();
 image_yscale = 2;
 image_xscale = 2;
 
-hp=20;
-maxHp = 20;
+hp=15;
+maxHp = 15;
 
 hitVFX = false;
 spd = 0;

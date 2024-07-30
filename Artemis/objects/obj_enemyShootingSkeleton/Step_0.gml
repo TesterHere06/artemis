@@ -1,4 +1,4 @@
-var _wallCollisions = false
+var _wallCollisions = true
 var _getDamage = true;
 var _enemyCollisions = false;
 
@@ -28,6 +28,10 @@ switch(state){
 		//Switch to chasing state
 		if !place_meeting(x, y, obj_collision) and sprite_index == spr_enemyShootySkeleton{
 			state = 2;
+			dir = random(360)
+			spd = chaseSpd
+			xspd = lengthdir_x(spd, dir);
+			yspd = lengthdir_y(spd, dir);
 		}
 		
 	break
@@ -55,7 +59,13 @@ switch(state){
 			shootTimer = 0;
 		}
 			
-			
+		if dir > 90 && dir < 270{
+			face = -2;
+		}
+		else{
+			face = 2;
+		}
+
 		
 	break;
 	
@@ -96,21 +106,33 @@ switch(state){
 			
 			//Reset the timer back to 0
 			shootTimer = 0;
+			
+			xspd = 0;
+			yspd = 0;
+			
 		}
 		
 		if bulletamount <=0 {
 			state = 2
-			strafe = choose(-60,60)
+			dir = random(360)
+			spd = chaseSpd
+			xspd = lengthdir_x(spd, dir);
+			yspd = lengthdir_y(spd, dir);
 		}
-	
+		
+		if dir > 90 && dir < 270{
+			face = -2;
+		}
+		else{
+			face = 2;
+		}
+
+		
 	break;
 	
 	case 2:
 		
 		image_speed = 0.5;
-		if instance_exists(obj_player){
-			dir = point_direction(x,y, obj_player.x, obj_player.y) + strafe
-		}
 		
 		//Set the correct speed
 		spd = chaseSpd;
@@ -126,11 +148,21 @@ switch(state){
 		}
 		
 		bulletamount ++
-		if bulletamount >= 160 {
+		if bulletamount >= 200 and not collision_line(x,y, obj_player.x, obj_player.y,obj_collision,false,false) {
 				bulletamount = 16;
 				image_speed = 1;
 				state = 1;
+				xspd = 0;
+				yspd = 0;
 		}
+		
+		if xspd < 0{
+			face = -2;
+		}
+		else{
+			face = 2;
+		}
+
 		
 	break;
 	
@@ -139,25 +171,14 @@ switch(state){
 
 
 
-//getting the speeds
-xspd = lengthdir_x(spd, dir);
-yspd = lengthdir_y(spd, dir);
-
-//get correct face
-if dir > 90 && dir < 270{
-	face = -2;
-}
-else{
-	face = 2;
-}
 
 //Collisions
 if _wallCollisions == true{
 	if place_meeting(x + xspd, y, obj_collision){
-		xspd = 0;
+		xspd = -xspd;
 	}
-	if place_meeting(x,y +yspd, obj_collision){
-		yspd = 0;	
+	if place_meeting(x,y + yspd, obj_collision){
+		yspd = -yspd;	
 	}
 }
 if _enemyCollisions == true{

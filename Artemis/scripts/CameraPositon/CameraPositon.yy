@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CameraPositon",
   "isCompatibility":false,
   "isDnD":false,

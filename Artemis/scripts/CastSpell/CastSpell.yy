@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CastSpell",
   "isCompatibility":false,
   "isDnD":false,

@@ -9,3 +9,5 @@ spawnTime = 6*60;
 
 diff = 25;
 global.DiffText = "";
+
+global.GhostAmount = 0

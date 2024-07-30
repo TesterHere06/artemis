@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"draw_my_weapon",
   "isCompatibility":false,
   "isDnD":false,

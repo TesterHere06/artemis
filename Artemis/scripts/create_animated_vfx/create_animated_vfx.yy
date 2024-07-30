@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"create_animated_vfx",
   "isCompatibility":false,
   "isDnD":false,

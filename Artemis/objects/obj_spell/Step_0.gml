@@ -45,6 +45,7 @@ if global.CurrentCombo == global.Combo[SpellID] and Cooldown < 1 {
 
 if input_check_pressed("shoot") and global.Combo[SpellID] == global.CurrentCombo and Cooldown < 1{
 	if global.SoulCounter >= global.Cost[SpellID] {
+		global.BookWantsOpen = false
 		global.SoulCounter -= global.Cost[SpellID]
 		image_blend = c_gray;
 		
@@ -69,5 +70,13 @@ if input_check_pressed("shoot") and global.Combo[SpellID] == global.CurrentCombo
 		} until pickedspellid;
 	} else {
 		global.CurrentCombo = "";
+		var spell = instance_create_depth(obj_player.x, obj_player.y, -3000, obj_poofspell)
+		spell.image_index = 4
+		var spell = instance_create_depth(obj_player.x, obj_player.y, -3000, obj_poofspell)
+		spell.image_index = 5
+		var spell = instance_create_depth(obj_player.x, obj_player.y, -3000, obj_poofspell)
+		spell.image_index = 5
+		var spell = instance_create_depth(obj_player.x, obj_player.y, -3000, obj_poofspell)
+		spell.image_index = 5
 	}
 }

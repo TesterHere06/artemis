@@ -45,7 +45,7 @@ switch(state){
 		
 		RampUp += choose(1,2)
 		
-		if RampUp >= 180 {
+		if RampUp >= 180 and not collision_line(x,y, obj_player.x, obj_player.y,obj_collision,false,false){
 			RampUp = 0;
 			state = 2;
 		};
@@ -102,8 +102,15 @@ switch(state){
 }
 
 
-
-
+if state = 0 {
+	mp_potential_step_object(obj_player.x, obj_player.y, spd, obj_collision)
+if dir > 90 && dir < 270{
+	face = -2;
+}
+else{
+	face = 2;
+}
+} else {
 //getting the speeds
 xspd = lengthdir_x(spd, dir);
 yspd = lengthdir_y(spd, dir);
@@ -137,6 +144,7 @@ if _enemyCollisions == true{
 //moving	
 x += xspd;
 y += yspd
+}
 
 //Set the depth
 depth = -y;

@@ -34,14 +34,23 @@ switch(state){
 	
 	
 	case 0:
+	if global.GhostAmount < 16 {
 		// Chase the player
 		if instance_exists(obj_player){
 			dir = point_direction(x,y, obj_player.x, obj_player.y) + swirl
 		}
 		
 		//Set the correct speed
-		spd = chaseSpd;
+		spd = chaseSpd ;
+	} else {
+				// Chase the player
+		if instance_exists(obj_player){
+			dir = point_direction(x,y, obj_player.x, obj_player.y) + swirl*2
+		}
 		
+		//Set the correct speed
+		spd = chaseSpd * 1.5 * global.GhostAmount div 10 ;
+	}
 	break;
 	
 }

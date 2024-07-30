@@ -83,20 +83,29 @@ if input_check("shoot") && shootTimer <= 0 {
 	}
 }
 
-} else {
+}
+else {
 	hspeed = hspeed / 2;
 	vspeed = vspeed / 2;
 	if input_check_pressed("spell_right") {
 		global.CurrentCombo += "D";
+		var spell = instance_create_depth(x, y, -3000, obj_poofspell)
+		spell.image_index = 2
 	}
 	if input_check_pressed("spell_left") {
 		global.CurrentCombo += "A";
+		var spell = instance_create_depth(x, y, -3000, obj_poofspell)
+		spell.image_index = 3
 	}
 	if input_check_pressed("spell_down") {
 		global.CurrentCombo += "S"
+		var spell = instance_create_depth(x, y, -3000, obj_poofspell)
+		spell.image_index = 1
 	}
 	if input_check_pressed("spell_up") {
 		global.CurrentCombo += "W";
+		var spell = instance_create_depth(x, y, -3000, obj_poofspell)
+		spell.image_index = 0
 	}
 	centerY = y + centerYoffset;
 	aimDir = point_direction(x, centerY, global.cursor_x, global.cursor_y);

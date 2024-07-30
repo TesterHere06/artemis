@@ -100,7 +100,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	}
 		
 	else if diff <= 70{
-		global.activeEnemyMax = 40
+		global.activeEnemyMax = 40 + (diff - 60) div 5
 		spawnTime = 8*60;
 		var _enemyType = choose("medium", "medium", "hard", "common")
 		
@@ -152,6 +152,7 @@ if timer >= spawnTime && !place_meeting(x, y + 16, obj_enemyParent){
 	}
 	
 	else{
+		global.activeEnemyMax = 40 + (diff - 60) div 5
 		var _enemyType = choose("hard", "hard", "medium", "medium", "common")
 		
 		if _enemyType = "medium"{
